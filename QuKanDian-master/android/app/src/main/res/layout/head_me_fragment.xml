@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?><!--  
+    类名：   head_me_fragment.xml 
+    类名注释       -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/share_new_me_bg"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/space_small">
+
+
+    <TextView
+        android:id="@+id/new_me_setting_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:paddingBottom="10dp"
+        android:paddingLeft="19dp"
+        android:paddingRight="10dp"
+        android:paddingTop="15dp"
+        android:text="设置"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_16_size" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:padding="@dimen/space_small">
+        <!--底部阴影背景-->
+        <ImageView
+            android:id="@+id/bottomBgView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/new_me_white_bg" />
+
+        <ImageView
+            android:id="@+id/userPhotoIV"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="@dimen/space_big"
+            android:src="@mipmap/default_user_header_icon" />
+
+        <TextView
+            android:id="@+id/nameTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_small"
+            android:layout_marginTop="@dimen/space_big"
+            android:layout_toRightOf="@+id/userPhotoIV"
+            android:text="名称"
+            android:textColor="@color/gray_3"
+            android:textSize="@dimen/text_17_size" />
+
+        <TextView
+            android:id="@+id/codeTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/nameTV"
+            android:layout_below="@+id/nameTV"
+            android:text="我的邀请码："
+            android:textColor="@color/gray_9"
+            android:textSize="@dimen/text_17_size" />
+
+        <TextView
+            android:id="@+id/copyTV"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_alignBottom="@+id/codeTV"
+            android:layout_alignTop="@+id/codeTV"
+            android:layout_toRightOf="@+id/codeTV"
+            android:background="@drawable/selector_task_every_day"
+            android:gravity="center"
+            android:paddingLeft="@dimen/space_small"
+            android:paddingRight="@dimen/space_small"
+            android:text="复制邀请码"
+            android:textColor="@color/main_red"
+            android:textSize="@dimen/text_11_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/bottomBgView"
+            android:layout_below="@+id/userPhotoIV"
+            android:layout_marginBottom="@dimen/space_small"
+            android:layout_marginLeft="@dimen/space_big"
+            android:layout_marginTop="@dimen/space_middle"
+            android:orientation="horizontal">
+
+            <LinearLayout style="@style/common_ll_weight_vertical">
+
+                <TextView
+                    style="@style/my_fragment_top_of_three_title"
+                    android:text="今日收益" />
+
+                <TextView
+                    style="@style/my_fragment_top_of_three_sum"
+                    android:text="0" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:src="@mipmap/new_me_fengexian" />
+
+            <LinearLayout style="@style/common_ll_weight_vertical">
+
+                <TextView
+                    style="@style/my_fragment_top_of_three_title"
+                    android:text="我的余额" />
+
+                <TextView
+                    style="@style/my_fragment_top_of_three_sum"
+                    android:text="0" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:src="@mipmap/new_me_fengexian" />
+
+            <LinearLayout style="@style/common_ll_weight_vertical">
+
+                <TextView
+                    style="@style/my_fragment_top_of_three_title"
+                    android:text="我的徒弟" />
+
+                <TextView
+                    style="@style/my_fragment_top_of_three_sum"
+                    android:text="0" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/space_middle">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                style="@style/my_fragment_top_of_four_img"
+                android:src="@mipmap/icon_txdh" />
+
+            <TextView
+                style="@style/my_fragment_top_of_four_text"
+                android:text="提现兑换" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/icon_yytx" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                style="@style/my_fragment_top_of_four_img"
+                android:src="@mipmap/icon_wdqb" />
+
+            <TextView
+                style="@style/my_fragment_top_of_four_text"
+                android:text="我的钱包" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                style="@style/my_fragment_top_of_four_img"
+                android:src="@mipmap/icon_yqhy" />
+
+            <TextView
+                style="@style/my_fragment_top_of_four_text"
+                android:text="邀请好友" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/icon_lxj" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                style="@style/my_fragment_top_of_four_img"
+                android:src="@mipmap/icon_dhsc" />
+
+            <TextView
+                style="@style/my_fragment_top_of_four_text"
+                android:text="兑换商城" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <com.zhangku.qukandian.widght.AdViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="@dimen/space_small" />
+</LinearLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mOtherView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/mNewPeopleTaskView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <!--<TextView-->
+        <!--android:id="@+id/numTV"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@mipmap/icon_newpeople_task_top"-->
+        <!--android:gravity="center"-->
+        <!--android:paddingBottom="5dp"-->
+        <!--android:text="1/1"-->
+        <!--android:textColor="@color/gray_3"-->
+        <!--android:textSize="@dimen/text_10_size" />-->
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_newpeople_task_botton" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mActView"
+        android:layout_width="wrap_content"
+        android:layout_height="95dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/mSmartIV"
+            android:layout_width="52dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@mipmap/app_icon" />
+
+        <ImageView
+            android:id="@+id/mSmartClostIV"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="5dp"
+            android:src="@mipmap/close" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mLevelView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/mLevelProcessTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/icon_newpeople_task_top"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:textColor="@color/gray_3"
+            android:textSize="@dimen/text_10_size"
+            android:visibility="gone" />
+
+
+        <ImageView
+            android:id="@+id/mLevelImg"
+            android:layout_width="90dp"
+            android:layout_height="76dp"
+            android:src="@mipmap/pop_1" />
+
+        <ImageView
+            android:id="@+id/mSmartClostLevelIV"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="5dp"
+            android:src="@mipmap/close" />
+
+    </LinearLayout>
+</FrameLayout>

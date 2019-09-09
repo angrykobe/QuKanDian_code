@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="345dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/bg_newpeople_rask_dialog_1" />
+
+        <LinearLayout
+            android:id="@+id/topView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:clipChildren="false"
+            android:clipToPadding="false">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="当前余额:  "
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_15_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/mGoldTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="0"
+                android:textColor="@color/red"
+                android:textSize="@dimen/text_15_size" />
+
+            <TextView
+                android:id="@+id/mWithdrawalsTV"
+                android:layout_width="76dp"
+                android:layout_height="23dp"
+                android:background="@drawable/selector_sign_radio"
+                android:gravity="center"
+                android:text="一元提现"
+                android:textColor="@color/selector_white_gray9"
+                android:textSize="@dimen/text_11_size" />
+
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/mRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/topView"
+            android:layout_gravity="center"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:fadeScrollbars="false"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:scrollbarDefaultDelayBeforeFade="0"
+            android:scrollbarFadeDuration="0"
+            android:scrollbarSize="6dp"
+            android:scrollbarStyle="insideOverlay"
+            android:scrollbarThumbVertical="@drawable/share_scroll_ver"
+            android:scrollbarTrackVertical="@drawable/share_scroll_ver_bg"
+            android:scrollbars="vertical"
+            />
+        <!--android:paddingLeft="60dp"-->
+        <!--android:paddingRight="57dp"-->
+
+        <!--android:scrollbarThumbVertical="@drawable/share_scroll_ver"-->
+        <!--android:scrollbarThumbVertical="@drawable/share_recir_red"-->
+        <!--android:scrollbarTrackVertical="@drawable/share_recir_blue"-->
+
+    </RelativeLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@mipmap/bg_newpeople_rask_dialog_2"
+        android:gravity="center"
+        android:orientation="vertical" />
+
+    <ImageView
+        android:id="@+id/closeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/icon_close_dialog_task"
+        android:layout_marginTop="@dimen/space_small"
+        />
+
+</LinearLayout>

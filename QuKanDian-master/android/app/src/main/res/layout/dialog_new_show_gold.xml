@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@color/transparent">
+
+    <LinearLayout
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/share_rect_corner_bgwhite"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/space_small"
+        >
+        <com.zhangku.qukandian.widght.TextSwitcherView
+            android:id="@+id/task_activity_marquee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/share_rect_top_corner_bg_yellow"
+            android:paddingBottom="3dp"
+            android:paddingLeft="@dimen/space_small"
+            android:paddingRight="@dimen/space_small"
+            android:paddingTop="3dp" />
+
+        <TextView
+            android:id="@+id/titleTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray_3"
+            android:textSize="@dimen/text_15_size"
+            android:layout_marginTop="@dimen/space_big"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/chai_hongbao_red_show_gold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="金币"
+                android:textColor="#F48213"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:maxLines="1"
+                />
+
+            <TextView
+                android:id="@+id/chai_hongbao_red_show_gold2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(约0元)"
+                android:textColor="#F24E3F"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:maxLines="1"
+                />
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/xsjb"
+            android:layout_marginTop="@dimen/space_small"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_13_size"
+            android:textColor="@color/gray_6"
+            android:layout_marginTop="4dp"
+            android:text="当前汇率：10000金币=1元"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_13_size"
+            android:textColor="#f48213"
+            android:layout_marginTop="@dimen/space_small"
+            android:text="(1元即可提现)"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/doneOtherTaskBtn"
+            android:layout_width="212dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="@dimen/space_middle"
+            android:layout_marginBottom="@dimen/space_middle"
+            android:background="@drawable/share_rect_corners_red_1"
+            android:gravity="center"
+            android:text="跟着小趣一起学赚钱吧！"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_14_size" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/cancleTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="狠心拒绝"
+        android:layout_marginTop="@dimen/space_small"
+        android:textColor="@color/FDD15C"
+        android:textSize="@dimen/text_16_size"
+        android:visibility="gone"
+        />
+
+
+</LinearLayout>

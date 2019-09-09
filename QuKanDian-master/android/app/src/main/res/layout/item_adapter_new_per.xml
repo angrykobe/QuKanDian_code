@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/space_middle">
+
+        <TextView
+            android:id="@+id/item_dialog_task_remind_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:maxEms="10"
+            android:text="捞红包赚话费"
+            android:textColor="@color/gray_3"
+            android:textSize="@dimen/text_16_size"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            />
+
+
+        <TextView
+            android:id="@+id/item_dialog_task_remind_infor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:maxEms="14"
+            android:text="进入浏览页面，点击任意广告"
+            android:textColor="@color/gray_3"
+            android:textSize="@dimen/text_12_size"
+            android:layout_marginTop="@dimen/space_small"
+            android:layout_below="@+id/item_dialog_task_remind_des"
+            />
+
+        <TextView
+            android:id="@+id/item_dialog_task_remind_glod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="+50"
+            android:gravity="center"
+            android:textColor="#FF7421"
+            android:textSize="@dimen/text_12_size"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:drawableRight="@mipmap/income_gole_icon"
+            android:drawablePadding="10dp"
+            />
+
+        <TextView
+            android:id="@+id/gotoTaskBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/selector_btn_yellow_gray_radio"
+            android:gravity="center"
+            android:paddingLeft="@dimen/space_small"
+            android:paddingRight="@dimen/space_small"
+            android:paddingTop="3dp"
+            android:ems="5"
+            android:paddingBottom="3dp"
+            android:text="去完成"
+            android:textColor="@color/gray_3"
+            android:textSize="@dimen/text_10_size"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@+id/item_dialog_task_remind_infor"
+            />
+    </RelativeLayout>
+</LinearLayout>

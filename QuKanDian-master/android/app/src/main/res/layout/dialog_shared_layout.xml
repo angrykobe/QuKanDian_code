@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="17dp"
+        android:paddingLeft="9dp"
+        android:paddingRight="9dp"
+        android:paddingTop="17dp">
+
+        <TextView
+            android:id="@+id/dialog_shared_circel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="8dp"
+            android:drawableTop="@mipmap/shared_circle_gray"
+            android:gravity="center"
+            android:text="朋友圈"
+            android:textColor="@color/black_33"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:id="@+id/dialog_shared_chat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="8dp"
+            android:drawableTop="@mipmap/shared_chat_green"
+            android:gravity="center"
+            android:text="微信"
+            android:textColor="@color/black_33"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:id="@+id/dialog_shared_qzone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="8dp"
+            android:drawableTop="@mipmap/shared_qqzone_yellow"
+            android:gravity="center"
+            android:text="QQ空间"
+            android:textColor="@color/black_33"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:id="@+id/dialog_shared_qq"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="8dp"
+            android:drawableTop="@mipmap/shared_qq_blue"
+            android:gravity="center"
+            android:text="QQ"
+            android:textColor="@color/black_33"
+            android:textSize="12dp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e5e5e5"/>
+
+    <LinearLayout
+        android:id="@+id/shareBottomView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="17dp"
+        android:paddingLeft="9dp"
+        android:paddingRight="9dp"
+        android:paddingTop="17dp">
+
+        <TextView
+            android:id="@+id/dialog_shared_wb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="8dp"
+            android:drawableTop="@mipmap/shared_wb_icon"
+            android:gravity="center"
+            android:text="微博"
+            android:textColor="@color/black_33"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:id="@+id/dialog_shared_message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="8dp"
+            android:drawableTop="@mipmap/shared_message_icon"
+            android:gravity="center"
+            android:text="短信"
+            android:textColor="@color/black_33"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:id="@+id/dialog_shared_system"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="8dp"
+            android:drawableTop="@mipmap/shared_system_shared_icon"
+            android:gravity="center"
+            android:text="系统分享"
+            android:textColor="@color/black_33"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:id="@+id/dialog_shared_copy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="8dp"
+            android:drawableTop="@mipmap/shared_copy_icon"
+            android:gravity="center"
+            android:text="复制链接"
+            android:textColor="@color/black_33"
+            android:textSize="12dp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e5e5e5"/>
+
+    <TextView
+        android:id="@+id/dialog_shared_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="@color/black_33"
+        android:textSize="18dp"/>
+</LinearLayout>

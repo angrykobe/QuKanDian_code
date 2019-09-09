@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--item_read_record_view-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_read_record_view_item"
+    android:layout_width="match_parent"
+    android:layout_height="37dp"
+    android:background="#ffe9e8"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#ffe9e8"/>
+
+    <TextView
+        android:id="@+id/item_read_record_view_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="#ffe9e8"
+        android:text="刚刚看到这里 点击刷新"
+        android:textColor="@color/main_red"
+        android:textSize="14dp"/>
+</LinearLayout>

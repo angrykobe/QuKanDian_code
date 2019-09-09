@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/new_me_fragment_loading_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/share_new_me_bg"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/settingTV"
+            android:scaleType="fitCenter"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="12dp"
+            android:paddingLeft="12dp"
+            android:paddingTop="12dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="12dp"
+            android:src="@mipmap/feedback" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:padding="@dimen/space_small">
+            <!--底部阴影背景-->
+            <ImageView
+                android:id="@+id/bottomBgView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@+id/view"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="-16dp"
+                android:background="@drawable/new_me_white_bg" />
+
+            <include
+                android:id="@+id/userPhotoView"
+                layout="@layout/view_user_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_big" />
+            <!--<ImageView-->
+            <!--android:id="@+id/userPhotoIV"-->
+            <!--android:layout_width="65dp"-->
+            <!--android:layout_height="65dp"-->
+            <!--android:layout_marginLeft="@dimen/space_big"-->
+            <!--android:src="@mipmap/user_photo"-->
+            <!--android:background="@drawable/shape_circle_white"-->
+            <!--/>-->
+
+            <TextView
+                android:id="@+id/nameTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_small"
+                android:layout_marginTop="27dp"
+                android:layout_toRightOf="@+id/userPhotoView"
+                android:text="名称"
+                android:textColor="@color/gray_3"
+                android:textSize="@dimen/text_17_size" />
+
+            <com.zhangku.qukandian.widght.UserLevelView
+                android:id="@+id/userLevelView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/nameTV"
+                android:layout_marginLeft="@dimen/space_middle"
+                android:layout_toRightOf="@+id/nameTV" />
+
+
+            <TextView
+                android:id="@+id/codeTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nameTV"
+                android:layout_alignLeft="@+id/nameTV"
+                android:layout_marginTop="8dp"
+                android:text="我的邀请码："
+                android:textColor="@color/gray_9"
+                android:textSize="@dimen/text_13_size" />
+
+            <TextView
+                android:id="@+id/copyTV"
+                android:layout_width="wrap_content"
+                android:layout_height="18dp"
+                android:layout_alignTop="@+id/codeTV"
+                android:layout_alignBottom="@+id/codeTV"
+                android:layout_marginLeft="@dimen/space_small"
+                android:layout_toRightOf="@+id/codeTV"
+                android:background="@drawable/selector_task_every_day2"
+                android:gravity="center"
+                android:paddingLeft="@dimen/space_small"
+                android:paddingRight="@dimen/space_small"
+                android:text="复制邀请码"
+                android:textColor="@color/main_red"
+                android:textSize="@dimen/text_11_size" />
+
+            <LinearLayout
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/userPhotoView"
+                android:layout_marginTop="17dp"
+                android:layout_marginBottom="@dimen/space_middle"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/todayIncomeView"
+                    style="@style/common_ll_weight_vertical">
+
+                    <TextView
+                        style="@style/my_fragment_top_of_three_title"
+                        android:text="今日收益" />
+
+                    <TextView
+                        android:id="@+id/todayIncomeTV"
+                        style="@style/my_fragment_top_of_three_sum"
+                        android:text="0" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="34dp"
+                    android:src="@mipmap/new_me_fengexian" />
+
+                <LinearLayout
+                    android:id="@+id/balanceView"
+                    style="@style/common_ll_weight_vertical">
+
+                    <TextView
+                        style="@style/my_fragment_top_of_three_title"
+                        android:text="我的余额" />
+
+                    <TextView
+                        android:id="@+id/balanceTV"
+                        style="@style/my_fragment_top_of_three_sum"
+                        android:text="0" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="34dp"
+                    android:src="@mipmap/new_me_fengexian" />
+
+                <LinearLayout
+                    android:id="@+id/apprenticeView"
+                    style="@style/common_ll_weight_vertical">
+
+                    <TextView
+                        style="@style/my_fragment_top_of_three_title"
+                        android:text="我的徒弟" />
+
+                    <TextView
+                        android:id="@+id/ApprenticeTV"
+                        style="@style/my_fragment_top_of_three_sum"
+                        android:text="0" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/text_20_size"
+            android:paddingTop="@dimen/text_10_size"
+            android:paddingRight="@dimen/text_20_size"
+            android:paddingBottom="@dimen/text_10_size">
+
+            <com.zhangku.qukandian.widght.TextSwitcherView
+                android:id="@+id/task_activity_marquee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/shap_rect_10_f2f2f2"
+                android:paddingLeft="@dimen/space_big"
+                android:paddingTop="3dp"
+                android:paddingRight="@dimen/space_small"
+                android:paddingBottom="3dp" />
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/headRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/white">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <!--分享-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_small"
+            android:background="@color/white"
+            android:gravity="center"
+            android:paddingTop="11dp"
+            android:text="邀请好友赚取Ta的双倍收益"
+            android:textColor="@color/gray_6"
+            android:textSize="@dimen/text_14_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingLeft="9dp"
+            android:paddingTop="17dp"
+            android:paddingRight="9dp"
+            android:paddingBottom="17dp">
+
+            <TextView
+                android:id="@+id/wechatShareTV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@mipmap/me_wechat"
+                android:drawablePadding="8dp"
+                android:gravity="center"
+                android:text="微信"
+                android:textColor="@color/gray_6"
+                android:textSize="@dimen/text_11_size" />
+
+            <TextView
+                android:id="@+id/wechatCircleTV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@mipmap/me_friend"
+                android:drawablePadding="8dp"
+                android:gravity="center"
+                android:text="朋友圈"
+                android:textColor="@color/gray_6"
+                android:textSize="@dimen/text_11_size" />
+
+            <TextView
+                android:id="@+id/qqShareTV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@mipmap/me_qq"
+                android:drawablePadding="8dp"
+                android:gravity="center"
+                android:text="QQ"
+                android:textColor="@color/gray_6"
+                android:textSize="@dimen/text_11_size" />
+
+            <TextView
+                android:id="@+id/codeShareTV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@mipmap/me_face"
+                android:drawablePadding="8dp"
+                android:gravity="center"
+                android:text="面对面"
+                android:textColor="@color/gray_6"
+                android:textSize="@dimen/text_11_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="@dimen/space_middle"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:id="@+id/withdrawView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    style="@style/my_fragment_top_of_four_img"
+                    android:src="@mipmap/icon_txdh" />
+
+                <TextView
+                    style="@style/my_fragment_top_of_four_text"
+                    android:text="提现兑换" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/icon_yytx"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/walletView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    style="@style/my_fragment_top_of_four_img"
+                    android:src="@mipmap/icon_wdqb" />
+
+                <TextView
+                    style="@style/my_fragment_top_of_four_text"
+                    android:text="我的钱包" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/friendView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    style="@style/my_fragment_top_of_four_img"
+                    android:src="@mipmap/icon_yqhy" />
+
+                <TextView
+                    style="@style/my_fragment_top_of_four_text"
+                    android:text="邀请好友" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/icon_lxj" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/shoppingView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    style="@style/my_fragment_top_of_four_img"
+                    android:src="@mipmap/icon_dhsc" />
+
+                <TextView
+                    style="@style/my_fragment_top_of_four_text"
+                    android:text="兑换商城" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <com.zhangku.qukandian.widght.AdViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="@dimen/space_small" />
+
+    </LinearLayout>
+
+</ScrollView>

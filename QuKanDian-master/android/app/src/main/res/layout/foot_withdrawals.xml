@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <!--<TextView-->
+        <!--android:id="@+id/footWithdrawalsInforTV"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="#FEF6F3"-->
+        <!--android:textSize="@dimen/text_14_size"-->
+        <!--android:text=""-->
+        <!--android:textColor="@color/gray_6"-->
+        <!--android:padding="@dimen/space_small"-->
+        <!--android:visibility="gone"-->
+        <!--/>-->
+
+
+    <com.tencent.smtt.sdk.WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_small"
+        android:layout_marginRight="@dimen/space_small"
+        >
+
+    </com.tencent.smtt.sdk.WebView>
+</LinearLayout>

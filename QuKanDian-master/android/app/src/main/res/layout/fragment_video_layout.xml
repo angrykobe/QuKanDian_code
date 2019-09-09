@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_f9"
+    android:fitsSystemWindows="false"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="23dp"
+        android:background="#33000000"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey_f9"
+        android:orientation="horizontal">
+
+        <com.androidkun.xtablayout.XTabLayout
+            android:id="@+id/fragment_video_tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_weight="1"
+            android:background="@color/main_gray2"
+            app:xTabDisplayNum="6"
+            app:xTabIndicatorColor="#FEC22E"
+            app:xTabIndicatorHeight="1.5dp"
+            app:xTabIndicatorWidth="20dp"
+            app:xTabSelectedTextColor="@color/black_33"
+            app:xTabTextAppearance="@style/MyTabLayoutTextAppearanceInverse"
+            app:xTabTextColor="@color/black_66"/>
+
+        <ImageView
+            android:id="@+id/fragment_video_search"
+            android:layout_width="39dp"
+            android:layout_height="39dp"
+            android:padding="11.5dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/search_red_icon"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment_video_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/fragment_video_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"/>
+    </FrameLayout>
+
+</LinearLayout>

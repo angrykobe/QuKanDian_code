@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?><!--  
+    类名：   ac_down_app_detail.xml 
+    类名注释       -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/startTaskTV"
+        android:paddingLeft="@dimen/space_middle"
+        android:paddingRight="@dimen/space_middle"/>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_above="@+id/startTaskTV"
+        android:layout_gravity="top"
+        android:background="@drawable/share_shadow" />
+
+        <TextView
+            android:id="@+id/startTaskTV"
+            android:layout_width="307dp"
+            android:layout_height="47dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/space_small"
+            android:layout_marginTop="@dimen/space_small"
+            android:background="@drawable/share_recir_yellow"
+            android:gravity="center"
+            android:text="开始任务"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_17_size"
+            android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_gray_bg_action_bar"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/grey_e5"/>
+
+    <LinearLayout
+        android:id="@+id/withdrawals_wechat_layout"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:background="#fff6ef"
+        android:gravity="center_vertical"
+        android:paddingLeft="19dp"
+        android:paddingRight="18dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@mipmap/withdrawals_wechat_icon"
+            android:drawablePadding="7dp"
+            android:text="绑定微信账号立即提现!"
+            android:textColor="#4E3818"
+            android:textSize="16dp"/>
+
+        <ImageView
+            android:id="@+id/withdrawals_binding_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/withdrawals_binging_btn"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/activity_withdrawals_layout_loading"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!--<View-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="1dp"-->
+                    <!--android:background="@color/grey_f2"/>-->
+
+                <RelativeLayout
+                    android:id="@+id/withdrawals_banner_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="116dp"
+                    android:visibility="gone">
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/withdrawals_banner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/withdrawals_position_01"
+                            android:layout_width="7dp"
+                            android:layout_height="7dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/guid_postion_selected"/>
+
+                        <ImageView
+                            android:id="@+id/withdrawals_position_02"
+                            android:layout_width="7dp"
+                            android:layout_height="7dp"
+                            android:layout_marginLeft="9dp"
+                            android:layout_marginRight="9dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/guid_postion_selected"/>
+
+                        <ImageView
+                            android:id="@+id/withdrawals_position_03"
+                            android:layout_width="7dp"
+                            android:layout_height="7dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/guid_postion_selected"/>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:background="@color/grey_f2"
+                    android:paddingBottom="19dp"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="@dimen/space_big"
+                    android:paddingRight="20dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="我的余额(金币)"
+                        android:textColor="@color/gray_3"
+                        android:textSize="@dimen/text_10_size"/>
+
+                    <TextView
+                        android:id="@+id/withdrawals_my_gold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="30000"
+                        android:textColor="@color/gray_3"
+                        android:textSize="@dimen/text_30_size"
+                        android:layout_below="@+id/textview"
+                        />
+
+                    <ImageView
+                        android:id="@+id/withdrawals_goto_shop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/withdrawals_goto_shop"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignBottom="@+id/withdrawals_my_gold"
+                        android:layout_below="@+id/textview"
+                        />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="请选择要提现的金额"
+                    android:textColor="@color/gray_3"
+                    android:textSize="@dimen/text_13_size"
+                    android:paddingLeft="@dimen/space_big"
+                    android:gravity="center_vertical"
+                    android:paddingTop="22dp"
+                    />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/activity_withdrawals_layout_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="9dp"
+                    android:paddingRight="9dp"
+                    android:paddingTop="19dp"/>
+                <com.tencent.smtt.sdk.WebView
+                    android:id="@+id/activity_withdrawals_layout_html"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginRight="19dp"/>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_e5"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:text="合计消耗:"
+            android:textColor="@color/black_33"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/withdrawals_sum_gold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:layout_weight="1"
+            android:text="10000金币"
+            android:textColor="@color/main_red"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/withdrawals_tixian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="18dp"
+            android:background="@mipmap/withdrawble_red_btn_bg"
+            android:gravity="center"
+            android:text="提现"
+            android:textColor="@color/white"
+            android:textSize="14dp"/>
+    </LinearLayout>
+</LinearLayout>

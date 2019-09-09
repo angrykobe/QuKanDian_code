@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?><!--  
+    类名：   head_income_details_ac.xml 
+    类名注释       -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_grey_f2"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/newPeopleGuide"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@color/FFF6E5"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_tz"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="趣友必看！！为什么很多趣友每天能赚上万金币？"
+            android:textColor="@color/AD6F02"
+            android:textSize="@dimen/text_13_size"
+            android:layout_marginLeft="@dimen/space_small"
+            />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_small"
+        android:background="@drawable/share_income_details_top_bg_yellow"
+        android:padding="@dimen/space_big"
+        >
+
+        <TextView
+            android:id="@+id/myGoldTitleTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的余额(金币)"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_11_size" />
+
+        <TextView
+            android:id="@+id/myGoldNumTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/myGoldTitleTV"
+            android:text="00000"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_30_size" />
+
+        <TextView
+            android:id="@+id/withdrawBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/myGoldTitleTV"
+            android:background="@drawable/share_recir_whitebg"
+            android:gravity="center"
+            android:paddingLeft="17dp"
+            android:paddingRight="17dp"
+            android:text="提现"
+            android:textColor="#FCA73C" />
+
+        <TextView
+            android:id="@+id/myHisGoldTitleTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/myGoldNumTV"
+            android:layout_marginTop="25dp"
+            android:text="累计收益(金币)"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_11_size" />
+
+        <TextView
+            android:id="@+id/myHisGoldNumTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/myHisGoldTitleTV"
+            android:text="00000"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_17_size" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="1px"
+            android:layout_height="34dp"
+            android:layout_alignTop="@+id/myHisGoldTitleTV"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="@dimen/space_big"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/myTodayGoldTitleTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/myGoldNumTV"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@+id/line"
+            android:text="今日收益(金币)"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_11_size" />
+
+        <TextView
+            android:id="@+id/myTodayGoldNumTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/myTodayGoldTitleTV"
+            android:layout_toRightOf="@+id/line"
+            android:text="00000"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_17_size" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/space_big"
+        android:paddingRight="@dimen/space_big"
+        android:paddingBottom="@dimen/space_small"
+        >
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1px"
+            android:layout_weight="1"
+            android:background="@color/line" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="最近3天收入明细"
+            android:textColor="@color/gray_9"
+            android:textSize="@dimen/text_13_size"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/space_middle"
+            android:layout_marginRight="@dimen/space_middle"
+            android:maxLines="1"
+            />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1px"
+            android:background="@color/line"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+</LinearLayout>

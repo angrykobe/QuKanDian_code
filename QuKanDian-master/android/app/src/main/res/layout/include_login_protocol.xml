@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="34dp"
+    android:layout_marginRight="34dp"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+
+    <CheckBox
+        android:id="@+id/chb_protocol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@null"
+        android:checked="true"
+        android:drawableLeft="@drawable/sel_check_protocol"
+        android:drawablePadding="4dp"
+        android:focusable="true"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="@string/login_check_box"
+        android:textColor="@color/login_edit_gray_bg_color"
+        android:textSize="12sp" />
+
+
+    <TextView
+        android:id="@+id/tv_protocol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="@string/login_protocol"
+        android:textColor="#FF9409"
+        android:textSize="12sp" />
+
+
+</LinearLayout>
+

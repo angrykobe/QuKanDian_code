@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?><!--  
+    类名注释       -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true" android:drawable="@drawable/iswifi_remind"/>
+    <item android:drawable="@drawable/iswifi_defaul"/>
+</selector>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?><!--  
+    类名：   selec_task_box_coppe.xml 
+    类名注释       -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:drawable="@mipmap/icon_coppe_case_open"/>
+    <item android:drawable="@mipmap/icon_coppe_case"/>
+</selector>

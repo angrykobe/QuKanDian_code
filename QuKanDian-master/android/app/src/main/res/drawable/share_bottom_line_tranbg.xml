@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+share_bottom_line_tranbg
+    类名注释   线（底部线条 ）    -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:top="-3dp" android:left="-3dp" android:right="-3dp" >
+        <shape android:shape="rectangle">
+            <solid android:color="@color/transparent"/>
+            <stroke
+                android:dashGap="0dp"
+                android:width="0.5dp"
+                android:color="@color/line" />
+        </shape>
+    </item>
+</layer-list>

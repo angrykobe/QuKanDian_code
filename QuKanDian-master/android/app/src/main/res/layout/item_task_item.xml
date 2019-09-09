@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?><!--  
+    类名：   item_task_item.xml 
+    类名注释       -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/share_bottom_line_whitebg"
+    >
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/share_bottom_line_whitebg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/titleView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/share_bottom_line_tranbg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/space_middle">
+
+        <ImageView
+            android:id="@+id/titleIconIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_task_luck" />
+
+        <TextView
+            android:id="@+id/titleTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_small"
+            android:text="标题"
+            android:textColor="@color/black_33"
+            android:textSize="@dimen/text_17_size" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/space_middle">
+
+
+        <TextView
+            android:id="@+id/subtitleTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxEms="8"
+            android:maxLines="1"
+            android:text="标题"
+            android:textColor="@color/black_2b"
+            android:textSize="@dimen/text_15_size" />
+
+        <TextView
+            android:id="@+id/goldNumTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_middle"
+            android:maxLines="1"
+            android:text="+12200"
+            android:textColor="@color/tab_select_new"
+            android:textSize="@dimen/text_11_size" />
+
+        <!--任务点击-->
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:id="@+id/doTaskTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selector_task_every_day"
+            android:ems="6"
+            android:gravity="center"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:text="查看详情"
+            android:textColor="@color/tab_select_yellow"
+            android:textSize="@dimen/text_11_size" />
+
+        <FrameLayout
+            android:id="@+id/processView"
+            android:layout_width="76dp"
+            android:layout_height="15dp"
+            android:visibility="gone"
+            >
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="76dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="30px"
+                android:max="5"
+                android:maxWidth="434px"
+                android:progress="3"
+                android:progressDrawable="@drawable/process_task_can_click" />
+
+            <TextView
+                android:id="@+id/processTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3/5"
+                android:textSize="@dimen/text_10_size"
+                android:textColor="@color/black_33"
+                android:layout_gravity="center"
+                />
+
+        </FrameLayout>
+
+
+        <ImageView
+            android:id="@+id/arrowImg"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginRight="6dp"
+            android:paddingLeft="@dimen/space_small"
+            android:paddingRight="@dimen/space_small"
+            android:scaleType="center"
+            android:src="@mipmap/arrow_down" />
+
+    </LinearLayout>
+    <!--详情说明-->
+    <TextView
+        android:id="@+id/contentTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_grey_f2"
+        android:padding="@dimen/space_middle"
+        android:text="暂无简介"
+        android:textSize="@dimen/text_13_size"
+        android:visibility="gone" />
+
+</LinearLayout>
+
+    <View
+        android:id="@+id/mOcclusionView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        />
+</FrameLayout>

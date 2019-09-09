@@ -1,0 +1,6 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <!-- MEDIA CONTROLLER -->
+    <dimen name="media_controller_view_height">48dip</dimen>
+</resources>

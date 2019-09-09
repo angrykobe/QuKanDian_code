@@ -1,0 +1,749 @@
+<?xml version="1.0" encoding="utf-8"?><manifest xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+package="com.zhangku.qukandian">
+
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+<uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+<uses-permission android:name="android.permission.WAKE_LOCK" />
+<!--悬浮框权限-->
+<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+<!--修改系统权限-->
+<uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+<uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+<uses-permission android:name="android.permission.VIBRATE" />
+<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+<uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+<uses-permission android:name="android.permission.GET_TASKS" />
+<uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+<uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+<!--自启动权限-->
+<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+<!-- DownloadManager -->
+<uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+<!--极光广告sdk要求权限-->
+<uses-permission android:name="android.permission.CALL_PHONE" />
+<!--通讯录权限-->
+<uses-permission android:name="android.permission.READ_CONTACTS" />
+<application
+    android:name=".application.QuKanDianApplication"
+    android:allowBackup="false"
+    android:alwaysRetainTaskState="true"
+    android:icon="@mipmap/app_icon"
+    android:label="@string/app_name"
+    android:largeHeap="true"
+    android:roundIcon="@mipmap/app_icon"
+    android:supportsRtl="true"
+    android:theme="@style/AppTheme"
+    tools:ignore="HardcodedDebugMode"
+    android:usesCleartextTraffic="true"
+    tools:replace="android:allowBackup">
+    <!--largeHeap   heapsize会增大2-3倍，缓解OOM的发生-->
+    <!--<meta-data-->
+    <!--android:name="DIANKAI_APP_KEY"-->
+    <!--android:value="c55da38a568d97fde48dc8190d44904c" />-->
+
+    <meta-data
+        android:name="TUIA_APPKEY"
+        android:value="3mWRQa2rzwhLqnV229bUc9EnFVnR" />
+    <meta-data
+        android:name="APP_ID"
+        android:value="111721" />
+
+    <meta-data
+        android:name="APP_KEY"
+        android:value="55dc1ba5d6d346cab359b6c5a27bb970" />
+
+    <!--<meta-data-->
+    <!--android:name="UMENG_APPKEY"-->
+    <!--android:value="58e5d596cae7e73674000c01" /> 趣看点 -->
+
+    <meta-data
+        android:name="UMENG_APPKEY"
+        android:value="5d0464013fc195f210000788" /><!-- 趣看视界-->
+
+    <meta-data
+        android:name="UMENG_CHANNEL"
+        android:value="${CHANNEL_NAME}" />
+
+    <meta-data
+        android:name="BaiduMobAd_APP_ID"
+        android:value="f58c3747" />
+
+    <meta-data
+        android:name="com.openinstall.APP_KEY"
+        android:value="add624" />
+
+    <meta-data
+        android:name="com.taobao.android.hotfix.IDSECRET"
+        android:value="120919-1" />
+
+    <meta-data
+        android:name="com.taobao.android.hotfix.APPSECRET"
+        android:value="5b84457c9b2dc9563714a7ccb6458926" />
+
+    <meta-data
+        android:name="com.taobao.android.hotfix.RSASECRET"
+        android:value="MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCisgqMht6zBlPfNHHSZDUXtV3xA4AGr1VKS14/bUf+PKYD0yCOgCHrv/mHzhsQBGUge6ov3cE9DZoLhBs19D1yM96RfImVZLQPJnOVECXMzTdXTUFYRE3863VD1TbpbCcRAaKu4L5Io0RH7PSDJApWXdrjGndbcxhrYKJ0DwYX4U80UBZfW+2+a2f9DVpqnMJeyBGyw+2kcBfZ6NEfhafeNSzslsICxiJ3u/UT19wWe5lAAO+KV2DwZQ54xvnXF1fgWCAecpnR+PV1CfwK/Yoff9yj7rEVwQJHuzFa2xds50BXe01ZqSSwBfuwRQ50i1v17Xhhg0JuqufXS1Bw5wSpAgMBAAECggEAM4WSVaI4UBVG5j5jdS8KqTFkSHjFSFip99caR5fB3r8yC7AGdVoaY9/tk5Yvd8kMhVbkNDhTg5QVHmR9gX6RHuNSLlxz7X1wkAOrQp9UeSDbz6fFc8BduiSOhCa3NwBq9rW/4QWG/NXHP8fIPudg5qzeLmEpPyqZpxd5GqvPUCwlJfu67I/EuGh1tXXbdoBIOYOZTsVKvBEg28X+FSyJdNRtHVEWbna/ZhetIGvGA3xXbE/4jEMmdQ1ivm76a+Xzq1XluQqsyWmWszNsy6v39PBwqEiEfLBqlXilgFluPS1lCShblhHDbhnE5YNGpagpgYyuvjIsmRT6WdavoKiyAQKBgQDrc2Yaxp+qgWb0olpXGBzPgY0Y2hqcmc6rJnAuxg68rhp6hpiU4c7143bIFd5+EV9WdtSViGj2Cug/smnhHoob7iZa82fXAJxwkLxWL28kGgMP2EYe+dfM1n35QzfCFL4q8BPDMu6X0hK5jfqp8lo58eq0Zcm35yLQU79ZTpUXiQKBgQCw5RgOGHFyk+o/6x9aG1D32ZsmaDuqLpOMdv6koR+BXJXshiKkPaRiLTXqKPZzav4tUJ5j32WpxxJJEOUdt9Tn2uL8as8WJtzgHIybCebR90XQzs0+1UUQXWOq5NsUh2hu8vH0GnnMPum5My/4GOpQ18AnMenPd2cXKI0bVTwcIQKBgQCr5LX4emX67zohA55800fFXsmKCUFAbzHo1ck0/LepnFoMddNTbn/QGF6RuRWUaE54K40MFmi6qD/isPiHt+oQdg9eezGmT/XmYGR/b2Xur2bo3HZlCvY3v6h8oExGzyn+4wMqkTaLdHzjJvqHtD2W7DzzsxRPxNkvytR5+Nr0MQKBgBXfDX1YqlY3UaQ7hvHWJMmwPw2dn5roDVg1skBap5GQB/1pjEjwUi3NVzgvfmFA3lJuAFdq3KAEPA+KpjlpbEqKdrws3JPplC+leAEHVWGqiBhMKXZWWiau1U7g4vGD2Ha3VREQYPTO5oj+ejTbp8T9GAYAlt8O7VEgs2movTjhAoGAG5gjSC0avTtXzM0p1+XeR1S6kCcXbypGZFqtP6wSLTbA6sFTwr+/BcNVjwTvcy+hKdYLW+C76wunbfsvvxl+Q5Eh7SobtzARdv1Scc/abNYfYVGsrPqLe7RTfCyCchJaGCP6F/gQHBMiGOk80j0+IF9AQalAWH+GiEmUgT79Uug=" />
+    <!--360-->
+    <activity
+        android:name="com.ak.android.bridge.AKActivity"
+        android:configChanges="orientation|screenSize|keyboardHidden"
+        android:theme="@android:style/Theme.Black.NoTitleBar" />
+
+    <service
+        android:name="com.qq.e.comm.DownloadService"
+        android:exported="false" />
+
+    <activity
+        android:name="com.db.ta.sdk.TmActivity"
+        android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+    <activity
+        android:name="com.qq.e.ads.ADActivity"
+        android:configChanges="keyboard|keyboardHidden|orientation"
+        android:theme="@android:style/Theme.Translucent"></activity>
+    <activity
+        android:name="com.qq.e.ads.PortraitADActivity"
+        android:screenOrientation="portrait"
+        android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+    <activity
+        android:name="com.qq.e.ads.LandscapeADActivity"
+        android:screenOrientation="landscape"
+        android:configChanges="keyboard|keyboardHidden|orientation|screenSize" />
+
+    <activity
+        android:name="com.baidu.mobads.AppActivity"
+        android:configChanges="keyboard|keyboardHidden|orientation"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+    <!--provider start-->
+    <!-- 如果targetSdkVersion设置值>=24，则强烈建议添加以下provider，否则会影响app变现效率 -->
+    <!--<provider-->
+    <!--android:name="com.baidu.mobads.openad.FileProvider"-->
+    <!--android:authorities="${applicationId}.fileprovider"-->
+    <!--android:exported="false"-->
+    <!--android:grantUriPermissions="true">-->
+    <!--<meta-data-->
+    <!--android:name="android.support.FILE_PROVIDER_PATHS"-->
+    <!--android:resource="@xml/file_provider" />-->
+    <!--</provider>-->
+    <!--<provider-->
+    <!--android:name="com.ak.android.provider.AKProvider"-->
+    <!--android:authorities="com.zhangku.qukandian.fileprovider"-->
+    <!--android:exported="false"-->
+    <!--android:grantUriPermissions="true"/>-->
+    <!--<provider-->
+    <!--android:name="android.support.v4.content.FileProvider"-->
+    <!--android:authorities="${applicationId}.fileprovider"-->
+    <!--android:exported="false"-->
+    <!--android:grantUriPermissions="true">-->
+    <!--<meta-data-->
+    <!--android:name="android.support.FILE_PROVIDER_PATHS"-->
+    <!--android:resource="@xml/file_provider"/>-->
+    <!--</provider>-->
+
+    <provider
+        android:name="com.baidu.mobads.openad.FileProvider"
+        android:authorities="${applicationId}.bd.provider"
+        android:exported="false"
+        android:grantUriPermissions="true">
+        <meta-data
+            android:name="android.support.FILE_PROVIDER_PATHS"
+            android:resource="@xml/file_provider" />
+    </provider>
+
+    <provider
+        android:name="com.zhangku.qukandian.utils.MyFileProvider"
+        android:authorities="${applicationId}.addam.apkdn.fileprovider"
+        android:exported="false"
+        android:grantUriPermissions="true">
+        <meta-data
+            android:name="android.support.FILE_PROVIDER_PATHS"
+            android:resource="@xml/file_provider" />
+    </provider>
+
+    <provider
+        android:name="android.support.v4.content.FileProvider"
+        android:authorities="${applicationId}.fileProvider"
+        android:exported="false"
+        android:grantUriPermissions="true">
+        <meta-data
+            android:name="android.support.FILE_PROVIDER_PATHS"
+            android:resource="@xml/file_provider" />
+    </provider>
+    <provider
+        android:name="com.ak.android.provider.AKProvider"
+        android:authorities="com.zhangku.qukandian.akadsdkprovider"
+        android:exported="false"
+        android:grantUriPermissions="true" />
+    <!--风灵相关-->
+    <provider
+        android:name="com.bytedance.sdk.openadsdk.multipro.TTMultiProvider"
+        android:authorities="${applicationId}.TTMultiProvider"
+        android:exported="false" />
+    <!--provider end-->
+
+    <!--极光广告-->
+    <activity android:name="cn.jiguang.adsdk.api.ADActivity" />
+    <service android:name="cn.jiguang.adsdk.api.DownloadService" />
+
+    <provider
+        android:name=".utils.JPFileProvider"
+        android:authorities="${applicationId}.fileprovider"
+        android:exported="false"
+        android:grantUriPermissions="true">
+        <meta-data
+            android:name="android.support.FILE_PROVIDER_PATHS"
+            android:resource="@xml/file_provider" />
+    </provider>
+    <provider
+        android:name="cn.jpush.android.service.DataProvider"
+        android:authorities="${applicationId}.DataProvider"
+        android:exported="false"
+        android:process=":pushcore" />
+
+    <meta-data
+        android:name="JPUSH_APPKEY"
+        android:value="b427483eaad111cac62235b5" />
+    <!--极光广告 end-->
+
+
+    <activity
+        android:name="com.xianwan.sdklibrary.view.AdListActivity"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme.NoActionBar" />
+    <service
+        android:name="com.xianwan.sdklibrary.view.DownLoadService"
+        android:exported="false" />
+    <receiver
+        android:name="com.xianwan.sdklibrary.view.DownLoadReceiver"
+        android:enabled="true"
+        android:exported="true">
+        <intent-filter>
+            <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+            <action android:name="android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED" />
+        </intent-filter>
+    </receiver>
+    <!-- 微信 -->
+    <activity
+        android:name="com.zhangku.qukandian.wxapi.WXEntryActivity"
+        android:exported="true"
+        android:launchMode="singleTop"
+        android:screenOrientation="portrait" />
+    <!-- qq -->
+    <activity
+        android:name="com.umeng.qq.tencent.AuthActivity"
+        android:launchMode="singleTask"
+        android:noHistory="true">
+
+        <intent-filter>
+            <action android:name="android.intent.action.VIEW" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+            <category android:name="android.intent.category.BROWSABLE" />
+
+            <data android:scheme="tencent100424468" />
+        </intent-filter>
+    </activity>
+
+    <activity
+        android:name="com.umeng.qq.tencent.AssistActivity"
+        android:configChanges="orientation|keyboardHidden|screenSize"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+    <!--微博-->
+    <activity
+        android:name=".WBShareActivity"
+        android:configChanges="keyboardHidden|orientation"
+        android:screenOrientation="portrait">
+        <intent-filter>
+            <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </activity>
+    <activity
+        android:name=".activitys.LauncherActivity"
+        android:screenOrientation="portrait">
+        <!--android:windowSoftInputMode="stateHidden|stateUnchanged"-->
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        <intent-filter>
+            <action android:name="android.intent.action.VIEW" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+            <category android:name="android.intent.category.BROWSABLE" />
+
+            <data
+                android:host="launch"
+                android:scheme="qukandian" />
+        </intent-filter>
+        <intent-filter>
+            <action android:name="android.intent.action.VIEW" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+            <category android:name="android.intent.category.BROWSABLE" />
+
+            <data android:scheme="add624" />
+        </intent-filter>
+    </activity>
+    <activity
+        android:name=".activitys.MainActivity"
+        android:launchMode="singleTask"
+        android:screenOrientation="portrait">
+        <intent-filter>
+            <action android:name="android.intent.action.SEND" />
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </activity>
+    <!--<activity-->
+    <!--android:name=".activitys.MainActivity"-->
+    <!--android:launchMode="singleTask"-->
+    <!--android:screenOrientation="portrait">-->
+    <!--<intent-filter>-->
+    <!--<action android:name="android.intent.action.SEND" />-->
+    <!--<category android:name="android.intent.category.DEFAULT" />-->
+    <!--</intent-filter>-->
+    <!--</activity>-->
+
+    <activity
+        android:name=".activitys.me.LoginActivity"
+        android:launchMode="singleTask"
+        android:screenOrientation="portrait"
+        android:windowSoftInputMode="adjustPan">
+
+        <intent-filter>
+            <action android:name="android.intent.action.VIEW" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+            <category android:name="android.intent.category.BROWSABLE" />
+
+            <data
+                android:host="launch1"
+                android:scheme="qukandian" />
+        </intent-filter>
+
+    </activity>
+
+    <activity
+        android:name=".activitys.me.LoginDynamicActivity"
+        android:launchMode="singleTask"
+        android:screenOrientation="portrait"
+        android:windowSoftInputMode="adjustPan" />
+    <activity
+        android:name=".activitys.me.DownAppDetailAct"
+        android:launchMode="singleTask"
+        android:screenOrientation="portrait" />
+    <activity
+        android:name=".activitys.TaskWebViewAct"
+        android:launchMode="singleTask"
+        android:screenOrientation="portrait" />
+
+    <activity
+        android:name=".activitys.me.RegisterActivity"
+        android:screenOrientation="portrait" />
+    <activity
+        android:name=".activitys.NewPeopleTaskActivity"
+        android:screenOrientation="portrait" />
+    <activity
+        android:name=".activitys.information.ReadProfitActivity"
+        android:screenOrientation="portrait" />
+    <activity
+        android:name=".activitys.information.ReadProgressActivity"
+        android:screenOrientation="portrait" />
+
+    <activity
+        android:name=".activitys.FaceToFaceInviteActivity"
+        android:screenOrientation="portrait" />
+    <!--<activity-->
+    <!--android:name=".activitys.NewGuideActivity"-->
+    <!--android:screenOrientation="portrait"-->
+    <!--android:theme="@style/NoAnimTheme" />-->
+    <activity
+        android:name=".activitys.ad.VideoAdEndCardAct"
+        android:screenOrientation="portrait"
+        android:theme="@style/NoAnimTheme" />
+
+    <activity
+        android:name=".activitys.additional.ChbyxjFaceToFaceInviteActivity"
+        android:screenOrientation="portrait" />
+
+    <activity
+        android:name=".activitys.me.UserLevelInforAct"
+        android:screenOrientation="portrait" />
+
+    <activity
+        android:name=".activitys.TodayNewsActivity"
+        android:screenOrientation="portrait" />
+
+    <activity
+        android:name=".activitys.me.ForgetPasswordActivity"
+        android:screenOrientation="portrait" />
+
+    <activity
+        android:name=".activitys.me.NoviceAnswerActivity"
+        android:screenOrientation="portrait" />
+
+    <activity
+        android:name=".activitys.me.UserLevelAct"
+        android:screenOrientation="portrait" />
+
+    <activity
+        android:name=".activitys.information.InformationChannelEditActivity"
+        android:screenOrientation="portrait" />
+
+    <!--<activity-->
+    <!--android:name=".activitys.comment.CommentAllActivity"-->
+    <!--android:screenOrientation="portrait"/>-->
+
+    <activity
+        android:name=".activitys.UrlWebViewActivity"
+        android:screenOrientation="portrait" />
+
+    <activity
+        android:name=".activitys.WebviewAct"
+        android:screenOrientation="portrait" />
+
+    <activity
+        android:name=".activitys.information.SougouActivity"
+        android:screenOrientation="portrait" />
+
+    <activity
+        android:name=".activitys.ProtocolWebViewAct"
+        android:screenOrientation="portrait" />
+
+    <activity
+        android:name=".biz.adcore.AdBrowserActivity"
+        android:screenOrientation="portrait" />
+
+    <activity
+        android:name=".activitys.SearchActivity"
+        android:screenOrientation="portrait" />
+    <activity
+        android:name=".activitys.me.GetGoldForDownActivity"
+        android:screenOrientation="portrait" />
+
+    <activity
+        android:name=".activitys.member.SettingActivity"
+        android:screenOrientation="portrait" />
+
+    <activity
+        android:name=".activitys.GuideActivity"
+        android:screenOrientation="portrait" />
+    <activity
+        android:name=".activitys.me.BeforeLoginActivity"
+        android:launchMode="singleTask"
+        android:screenOrientation="portrait" />
+
+    <activity
+        android:name=".activitys.member.PerfectInforActivity"
+        android:screenOrientation="portrait" />
+
+    <activity
+        android:name=".activitys.member.UpdateNicknameActivity"
+        android:screenOrientation="portrait" />
+
+
+    <!--<activity-->
+    <!--android:name=".activitys.information.InformationDetailsAtivity"-->
+    <!--android:exported="true"-->
+    <!--android:screenOrientation="portrait">-->
+    <!--<intent-filter>-->
+    <!--<action android:name="android.intent.action.SEND"/>-->
+    <!--<category android:name="android.intent.category.DEFAULT"/>-->
+    <!--</intent-filter>-->
+    <!--</activity>-->
+    <activity
+        android:name=".activitys.information.InformationDetailsAtivity"
+        android:exported="true"
+        android:screenOrientation="portrait">
+        <intent-filter>
+            <action android:name="android.intent.action.VIEW" />
+            <action android:name="android.intent.action.SEND" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </activity>
+
+    <activity
+        android:name=".activitys.video.VideoDetailsActivity"
+        android:configChanges="orientation|screenSize|smallestScreenSize|keyboard|keyboardHidden|navigation"
+        android:exported="true"
+        android:screenOrientation="portrait">
+        <intent-filter>
+            <action android:name="android.intent.action.SEND" />
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </activity>
+
+    <activity
+        android:name=".activitys.member.ArticleCollectActivity"
+        android:screenOrientation="portrait" />
+
+    <activity
+        android:name=".activitys.task.NoviceReadPrizeActivity"
+        android:screenOrientation="portrait" />
+    <activity
+        android:name=".activitys.ad.AdWebViewAct"
+        android:screenOrientation="portrait" />
+
+    <activity
+        android:name=".activitys.task.WriteInvitationCodeActivity"
+        android:screenOrientation="portrait"
+        android:windowSoftInputMode="stateAlwaysHidden" />
+
+    <activity
+        android:name=".activitys.me.IncomeRankActivity"
+        android:screenOrientation="portrait" />
+
+    <activity
+        android:name=".activitys.me.IncomeDetailsActivity"
+        android:screenOrientation="portrait" />
+
+    <activity
+        android:name=".activitys.me.WithdrawalsActivity"
+        android:screenOrientation="portrait" />
+
+    <activity
+        android:name=".activitys.me.WithdrawalsRecordActivity"
+        android:screenOrientation="portrait" />
+
+    <activity
+        android:name=".activitys.me.BrowHistoryActivity"
+        android:screenOrientation="portrait" />
+
+    <activity
+        android:name=".activitys.me.FeedbackActivity"
+        android:screenOrientation="portrait" />
+
+    <activity
+        android:name=".activitys.me.AboutActivity"
+        android:screenOrientation="portrait" />
+
+    <activity
+        android:name=".activitys.me.MessageCenterActivity"
+        android:screenOrientation="portrait" />
+
+    <activity
+        android:name=".activitys.me.QukandianCourseActivity"
+        android:screenOrientation="portrait" />
+
+    <activity
+        android:name=".activitys.ShareIncomeActivity"
+        android:screenOrientation="portrait" />
+
+    <activity
+        android:name=".activitys.me.BindPhoneActivity"
+        android:screenOrientation="portrait" />
+
+    <activity
+        android:name=".activitys.task.TaskChestActivity"
+        android:screenOrientation="portrait" />
+    <activity
+        android:name=".activitys.task.SearchEarnActivity"
+        android:screenOrientation="portrait" />
+
+    <activity
+        android:name=".activitys.me.UpdateWechatBindActivity"
+        android:screenOrientation="portrait" />
+    <activity
+        android:name=".activitys.WebviewForDiankaiSdkAct"
+        android:screenOrientation="portrait" />
+    <activity
+        android:name=".activitys.task.QuBaoGameActivity"
+        android:screenOrientation="portrait" />
+
+    <activity
+        android:name=".activitys.MySharedActivity"
+        android:screenOrientation="portrait" />
+    <activity
+        android:name=".activitys.task.SdwWebActivity">
+    </activity>
+    <activity
+        android:name=".activitys.ad.ResouAct"
+        android:screenOrientation="portrait" />
+    <activity
+        android:name=".activitys.additional.ChbyxjUrlActivity"
+        android:screenOrientation="portrait" />
+    <activity
+        android:name=".activitys.additional.PutongWebActivity"
+        android:screenOrientation="portrait" />
+    <activity
+        android:name=".activitys.additional.ShouTuWebActivity"
+        android:screenOrientation="portrait" />
+    <activity
+        android:name=".activitys.additional.LuckTurntableWebActivity"
+        android:screenOrientation="portrait" />
+    <activity
+        android:name=".activitys.additional.PutongBrowserActivity"
+        android:screenOrientation="portrait" />
+    <activity
+        android:name=".activitys.MallUrlActivity"
+        android:screenOrientation="portrait" />
+    <activity
+        android:name=".activitys.AdNativeWebActivity"
+        android:screenOrientation="portrait" />
+    <activity android:name=".activitys.ad.VideoAdAct" />
+
+    <!--<receiver android:name=".receiver.CommonReceiver">-->
+
+    <!--<intent-filter>-->
+    <!--<action android:name="com.zhangku.qukandian.action.WAKE_UP_APP"/>-->
+    <!--</intent-filter>-->
+    <!--</receiver>-->
+    <!--监听网络变化-->
+    <receiver android:name=".receiver.NetTypeBrocoadcastReceiver">
+
+        <intent-filter>
+            <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+        </intent-filter>
+    </receiver>
+    <receiver android:name="com.zhangku.qukandian.receiver.DownloadReceiver">
+        <intent-filter>
+            <!-- 配置 点击通知 和 下载完成 两个 action -->
+            <action android:name="android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED" />
+            <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+        </intent-filter>
+    </receiver>
+    <!--apk包安装和移除广播-->
+    <receiver android:name=".receiver.InstallAPKReceiver">
+        <intent-filter>
+            <action android:name="android.intent.action.PACKAGE_ADDED" />  <!--安装-->
+            <!--<action android:name="android.intent.action.PACKAGE_REMOVED"/>&lt;!&ndash;2覆盖安装&ndash;&gt;-->
+            <!--<action android:name="android.intent.action.PACKAGE_REPLACED"/>&lt;!&ndash;2覆盖安装&ndash;&gt;-->
+            <!--<action android:name="android.intent.action.PACKAGE_FULLY_REMOVED"/>&lt;!&ndash;卸载&ndash;&gt;-->
+            <data android:scheme="package" />
+        </intent-filter>
+    </receiver>
+
+    <service android:name=".service.DownloadService" />
+    <!--极光推送-->
+    <receiver
+        android:name=".receiver.jPush.MyReceiver"
+        android:exported="false"
+        android:enabled="true">
+        <intent-filter>
+            <action android:name="cn.jpush.android.intent.REGISTRATION" />
+            <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+            <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+            <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+            <action android:name="cn.jpush.android.intent.NOTIFICATION_CLICK_ACTION" />
+            <action android:name="cn.jpush.android.intent.CONNECTION" />
+
+            <category android:name="com.zhangku.qukandian" />
+        </intent-filter>
+    </receiver>
+
+    <receiver
+        android:name="cn.jpush.android.service.PushReceiver"
+        android:enabled="true"
+        android:exported="false">
+        <intent-filter android:priority="1000">
+            <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />           <!--Required  显示通知栏 -->
+            <category android:name="com.zhangku.qukandian" />
+        </intent-filter>
+        <intent-filter>
+            <action android:name="android.intent.action.USER_PRESENT" />
+            <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+        </intent-filter>        <!-- Optional -->
+        <intent-filter>
+            <action android:name="android.intent.action.PACKAGE_ADDED" />
+            <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+            <data android:scheme="package" />
+        </intent-filter>
+    </receiver>
+    <!-- since 1.8.0 option 可选项。用于同一设备中不同应用的JPush服务相互拉起的功能。 -->
+    <!-- 若不启用该功能可删除该组件，将不拉起其他应用也不能被其他应用拉起 -->
+    <service
+        android:name="cn.jpush.android.service.DaemonService"
+        android:enabled="true"
+        android:exported="true">
+        <intent-filter>
+            <action android:name="cn.jpush.android.intent.DaemonService" />
+            <category android:name="com.zhangku.qukandian" />
+        </intent-filter>
+    </service>
+    <!--阅盟sdk配置-->
+    <!-- 以下组件必须添加 -->
+    <receiver android:name="com.iBookStar.activityComm.AppInstallReceiver">
+        <intent-filter>
+            <action android:name="android.intent.action.PACKAGE_ADDED" />
+            <!-- xxx 为当前 APP 的包名-->
+            <action android:name="${applicationId}.pre.download" />
+            <action android:name="${applicationId}.download.complete" />
+            <action android:name="${applicationId}.install.complete" />
+
+            <data android:scheme="package" />
+        </intent-filter>
+    </receiver>
+    <!-- xxx 为当前 APP 的包名，适配 8.0 跨应用传递文件路径-->
+    <provider
+        android:name="com.iBookStar.utils.YmFileProvider"
+        android:authorities="${applicationId}.ymfileprovider"
+        android:exported="false"
+        android:grantUriPermissions="true">
+        <meta-data
+            android:name="android.support.FILE_PROVIDER_PATHS"
+            android:resource="@xml/ym_file_paths" />
+    </provider>
+    <!--阅盟sdk配置  end-->
+    <!--今日头条-->
+    <provider
+        android:name="com.bytedance.sdk.openadsdk.TTFileProvider"
+        android:authorities="${applicationId}.TTFileProvider"
+        android:exported="false"
+        android:grantUriPermissions="true">
+        <meta-data
+            android:name="android.support.FILE_PROVIDER_PATHS"
+            android:resource="@xml/file_provider" />
+    </provider>
+    <!--今日头条广告sdk配置  end-->
+    <activity android:name="com.hmob.hmsdk.HMAdActivity" />
+    <activity android:name=".activitys.ad.VideoAdForOupengAct" />
+
+    <service android:name="com.hmob.hmsdk.services.DownloadService" />
+    <!--风灵广告相关-->
+    <activity android:name="com.felink.adSdk.adAction.WebViewActivityForJS" />
+    <!--乐真试玩-->
+    <activity
+        android:name="com.zhangku.qukandian.biz.adpackage.lezhenshiwan.DetailActivity"
+        android:configChanges="keyboard|keyboardHidden|orientation|screenSize|smallestScreenSize|screenLayout"
+        android:screenOrientation="portrait" />
+    <activity
+        android:name="com.zhangku.qukandian.biz.adpackage.lezhenshiwan.WowanIndex"
+        android:configChanges="keyboard|keyboardHidden|orientation|screenSize|smallestScreenSize|screenLayout"
+        android:screenOrientation="portrait" />
+
+    <!--xxx.xxx.xxx为包名-->
+    <!--<provider
+        android:name="android.support.v4.content.FileProvider"
+        android:authorities="com.zhangku.qukandian.fileProvider"
+        android:exported="false"
+        android:grantUriPermissions="true">
+        <meta-data
+            android:name="android.support.FILE_PROVIDER_PATHS"
+            android:resource="@xml/file_provider" />
+    </provider>-->
+    <!--乐真试玩end-->
+    <!--趣豹游戏-->
+    <!-- 这是为了解决 TTAdSdk 需要使用 http client 在 Android 9.0 会 class not found 而加的配置 -->
+    <uses-library
+        android:name="org.apache.http.legacy"
+        android:required="false" />
+    <!--end-->
+</application>
+<!--风灵arr接入冲突问题-->
+<uses-sdk tools:overrideLibrary="com.felink.felinksdk,com.dingmouren.layoutmanagergroup" />
+
+</manifest>

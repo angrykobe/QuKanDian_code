@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_common_btn_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/item_task_list_view_task_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/item_task_list_view_task_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/black_33"
+            android:layout_marginLeft="6dp"
+            android:textSize="@dimen/text_16_size"/>
+
+        <TextView
+            android:id="@+id/item_task_list_view_task_reward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red_f7b"
+            android:textSize="@dimen/text_12_size"/>
+
+        <ImageView
+            android:id="@+id/item_task_list_view_task_gold_icon"
+            android:layout_width="@dimen/text_16_size"
+            android:layout_height="@dimen/text_16_size"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="6dp"
+            android:src="@mipmap/task_item_gold_icon"/>
+
+        <ImageView
+            android:id="@+id/item_task_list_view_task_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_task_arrow_selected_bg"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/item_task_list_view_task_introduce"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:background="@color/grey"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="6dp">
+
+            <TextView
+                android:id="@+id/item_task_list_view_item_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:lineSpacingExtra="5dp"
+                android:textColor="@color/black_33"
+                android:textSize="@dimen/text_15_size"/>
+
+            <TextView
+                android:id="@+id/item_task_list_view_item_details"
+                android:layout_width="74dp"
+                android:layout_height="24dp"
+                android:gravity="center"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:paddingLeft="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:text="查看详情"
+                android:background="@drawable/share_recir_ora"
+                android:textColor="@color/white"
+                android:textSize="11dp"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/item_task_list_view_item_img"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/grey_e5"
+        android:visibility="gone"/>
+</LinearLayout>

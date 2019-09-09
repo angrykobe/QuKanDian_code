@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="50dp"
+    android:layout_gravity="center_horizontal"
+    >
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/share_rect_corners_gradient_yellow"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/space_big"
+        android:paddingRight="@dimen/space_big"
+        android:paddingBottom="@dimen/space_middle"
+        android:layout_marginTop="120dp"
+        android:paddingTop="100dp"
+        android:layout_gravity="center_horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="昨天累计获得"
+            android:textColor="@color/gray_6"
+            android:textSize="@dimen/text_15_size" />
+
+        <TextView
+            android:id="@+id/contentTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_middle"
+            android:text="2000金币"
+            android:textColor="#FF5150"
+            android:textSize="@dimen/text_26_size" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_small"
+            android:text="再加把劲很快就能提现啦"
+            android:textColor="@color/gray_6"
+            android:gravity="center"
+            android:textSize="@dimen/text_15_size" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_small"
+            android:text="赚钱小秘诀："
+            android:textColor="@color/gray_6"
+            android:gravity="center"
+            android:textSize="@dimen/text_14_size" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_small"
+            android:text="多看文章多热搜，多做任务多邀请"
+            android:textColor="#FF5150"
+            android:gravity="center"
+            android:textSize="@dimen/text_14_size" />
+
+        <TextView
+            android:id="@+id/doneOtherTaskBtn"
+            android:layout_width="212dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="@dimen/space_middle"
+            android:background="@drawable/share_recir_ora"
+            android:gravity="center"
+            android:text="知道了"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_16_size" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="218dp"
+        android:src="@mipmap/img_yesterday_record"
+        />
+</FrameLayout>

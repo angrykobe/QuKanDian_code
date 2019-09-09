@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/mHighPriceView"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="成功分享高价文"
+            android:textColor="@color/gray_6"
+            android:textSize="@dimen/text_18_size"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_05_gold"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            />
+        <TextView
+            android:id="@+id/mHighPriceTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="300金币/次"
+            android:textColor="@color/red"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_18_size"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/mHighPriceLine"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@drawable/share_line_dotted"
+        android:layout_marginLeft="@dimen/space_big"
+        android:layout_marginRight="@dimen/space_big"
+        android:layerType="software"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/share_bottom_line_whitebg"
+        android:gravity="center"
+        android:padding="@dimen/space_big"
+
+        >
+
+        <TextView
+            android:id="@+id/dialog_shared_circel_new"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="8dp"
+            android:drawableTop="@mipmap/shared_circle_gray"
+            android:gravity="center"
+            android:text="朋友圈"
+            android:textColor="@color/black_33"
+            android:textSize="12dp"/>
+
+        <TextView
+            android:id="@+id/dialog_shared_chat_new"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="8dp"
+            android:drawableTop="@mipmap/shared_chat_green"
+            android:gravity="center"
+            android:text="微信"
+            android:textColor="@color/black_33"
+            android:textSize="12dp"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/dialog_shared_cancel_new"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:text="取消"
+        android:textColor="@color/gray_6"
+        android:gravity="center"
+        android:textSize="@dimen/text_18_size"
+        android:background="#FCFCFC"
+        />
+
+</LinearLayout>

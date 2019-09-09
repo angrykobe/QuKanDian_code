@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?><!--  
+    类名：   test_share.xml 
+    类名注释    测试画图   -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="line">
+    <solid android:color="@color/white"/>
+</shape>

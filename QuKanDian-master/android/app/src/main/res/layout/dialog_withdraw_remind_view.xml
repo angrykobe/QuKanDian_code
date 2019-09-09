@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/withdraw_remind_top_bg"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dialog_withdrawals_remind_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="155dp"
+        android:textColor="#ff512e"
+        android:textSize="26dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="提现已到账"
+        android:textColor="@color/black_1b"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:id="@+id/dialog_withdrawals_remind_confirm"
+        android:layout_width="163dp"
+        android:layout_height="36dp"
+        android:gravity="center"
+        android:background="@mipmap/withdraw_remind_btn_bg"
+        android:text="确定"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/white"
+        android:textSize="17dp"/>
+</LinearLayout>

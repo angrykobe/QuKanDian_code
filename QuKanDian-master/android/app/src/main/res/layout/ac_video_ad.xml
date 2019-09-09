@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?><!--  
+    类名：   ac_video_ad.xml 
+    类名注释       -->
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center" />
+    <com.tencent.smtt.sdk.WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <FrameLayout
+        android:id="@+id/progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black">
+
+        <ProgressBar
+            style="@style/video_progressbar_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/backIV"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/btn_nav_back"
+        android:scaleType="center"
+        android:layout_marginTop="20dp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/bottomView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/space_small"
+        android:layout_gravity="bottom"
+        android:layout_margin="@dimen/space_small"
+        android:background="@drawable/share_rect_corner_bggray"
+        android:visibility="gone"
+        >
+
+        <ImageView
+            android:id="@+id/iconIV"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/app_icon"
+            android:layout_marginRight="@dimen/space_small"
+            />
+
+        <TextView
+            android:id="@+id/titleTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iconIV"
+            android:layout_alignTop="@+id/iconIV"
+            android:textSize="@dimen/text_19_size"
+            android:text="标题"
+            android:textColor="@color/gray_3"
+            android:layout_toLeftOf="@+id/detailTV"
+            android:layout_marginRight="3dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            />
+
+        <TextView
+            android:id="@+id/subTitleTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iconIV"
+            android:layout_alignBottom="@+id/iconIV"
+            android:textSize="@dimen/text_13_size"
+            android:textColor="@color/gray_6"
+            android:text="副标题"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/detailTV"
+            android:layout_width="88dp"
+            android:layout_height="31dp"
+            android:background="@drawable/share_recir_tranbg_grayframe"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="查看详情"
+            android:gravity="center"
+            android:textColor="@color/gray_6"
+            />
+
+    </RelativeLayout>
+
+
+    <com.zhangku.qukandian.widght.ReadGoldView
+        android:id="@+id/ReadGoldView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="70dp"
+        android:visibility="gone"
+        />
+</FrameLayout>

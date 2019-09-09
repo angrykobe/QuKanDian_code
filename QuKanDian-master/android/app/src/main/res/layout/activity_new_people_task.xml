@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/StatusBar"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="#33000000" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_title_height"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/baseBackIV"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/selector_common_btn_bg"
+            android:padding="15dp"
+            android:src="@mipmap/nav_back_green_icon" />
+
+        <TextView
+            android:id="@+id/baseTitleTV"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/layout_title_height"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="标题"
+            android:textColor="@color/gray_3"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/baseSubTitleRightTV"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/space_middle"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/gray_3"
+            android:textSize="@dimen/text_13_size" />
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/mRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/grey_f9"
+        android:clipChildren="false"
+        android:clipToPadding="false" />
+
+
+</LinearLayout>

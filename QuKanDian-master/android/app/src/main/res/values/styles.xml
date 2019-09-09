@@ -1,0 +1,83 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/black_33</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorPrimaryDark">@color/black_33</item>
+
+        <!--&lt;!&ndash; colorPrimary is used for the default action bar background            用于默认操作栏的背景&ndash;&gt;        -->
+        <!--<item name="colorPrimary">@color/my_awesome_color</item>         -->
+        <!--&lt;!&ndash; colorPrimaryDark is used for the status bar 主要用于状态栏&ndash;&gt;        -->
+        <!--<item name="colorPrimaryDark">@color/my_awesome_darker_color</item>         -->
+        <!--&lt;!&ndash; colorAccent is used as the default value for colorControlActivated,             -->
+        <!--which is used to tint widgets 用于色彩控制器的默认值，用来给小部件着色&ndash;&gt;        -->
+        <item name="colorAccent">@color/red</item>
+        <!-- You can also set colorControlNormal, colorControlActivated
+        colorControlHighlight, and colorSwitchThumbNormal. -->
+
+    </style>
+
+    <style name="zhangku_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="popupAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/pop_in</item>
+        <item name="android:windowExitAnimation">@anim/pop_out</item>
+    </style>
+    <style name="nullpopupAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@null</item>
+        <item name="android:windowExitAnimation">@null</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <!--dialog全屏-->
+    <style name="fullDialog">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="MyTabLayoutTextAppearanceInverse"
+           parent="TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse">
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="Theme.MyAppTheme" parent="AppTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@drawable/launcher_defualt_layout</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="ButtonStyle001" parent="@style/Widget.AppCompat.Button.Borderless">
+        <item name="android:background">@drawable/bt_shape</item>
+    </style>
+
+
+    <style name="NoAnimTheme" parent="AppTheme">
+        <item name="android:windowAnimationStyle">@style/noAnimation</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="noAnimation">
+        <item name="android:activityOpenEnterAnimation">@null</item>
+        <item name="android:activityOpenExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@null</item>
+        <item name="android:activityCloseExitAnimation">@null</item>
+        <item name="android:taskOpenEnterAnimation">@null</item>
+        <item name="android:taskOpenExitAnimation">@null</item>
+        <item name="android:taskCloseEnterAnimation">@null</item>
+        <item name="android:taskCloseExitAnimation">@null</item>
+        <item name="android:taskToFrontEnterAnimation">@null</item>
+        <item name="android:taskToFrontExitAnimation">@null</item>
+        <item name="android:taskToBackEnterAnimation">@null</item>
+        <item name="android:taskToBackExitAnimation">@null</item>
+
+    </style>
+</resources>

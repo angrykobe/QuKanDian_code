@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?><!--开宝箱头部布局-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <!--点击领取-->
+    <LinearLayout
+        android:id="@+id/layout_chai_baoxiang_chai_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="18dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:src="@mipmap/icon_klq" />
+
+        <TextView
+            android:id="@+id/getGoldTV"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageview"
+            android:background="@mipmap/icon_bj"
+            android:gravity="center"
+            android:paddingRight="8dp"
+            android:text="可领取"
+            android:textColor="@color/FF7F00"
+            android:textSize="@dimen/text_11_size"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <!--开始计时-->
+    <LinearLayout
+        android:id="@+id/layout_chai_baoxiang_chai_gray_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="18dp"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <com.zhangku.qukandian.widght.BoxLightView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:src="@mipmap/icon_djs" />
+
+        <TextView
+            android:id="@+id/layout_chai_baoxiang_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageview2"
+            android:background="@mipmap/icon_bj"
+            android:gravity="left|center_vertical"
+            android:text="00:00:00"
+            android:textColor="@color/FF7F00"
+            android:textSize="@dimen/text_12_size" />
+    </LinearLayout>
+
+
+
+    <ImageView
+        android:id="@+id/main_search_layout"
+        android:layout_width="48dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:padding="14dp"
+        android:src="@mipmap/main_search_icon_white"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rl_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="110dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/white_fillet_bg">
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="7dp"
+            android:layout_toLeftOf="@+id/tv_search_tip"
+            android:background="@mipmap/icon_info_search"
+            android:padding="14dp" />
+
+        <TextView
+            android:id="@+id/tv_search_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="搜您想看的"
+            android:textColor="#999999"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/view_item_infor_tab_iv"
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="13dp"
+            android:layout_toRightOf="@+id/view_item_infor_tab_title" />
+
+        <TextView
+            android:id="@+id/view_item_infor_tab_number_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"
+            android:layout_above="@+id/view_item_infor_tab_iv"
+            android:layout_alignRight="@+id/view_item_infor_tab_iv"
+            android:layout_marginRight="-2dp"
+            android:layout_marginBottom="-7dp"
+            android:background="@drawable/share_recir_red2"
+            android:gravity="center"
+            android:minWidth="10dp"
+            android:textColor="@color/white"
+            android:textSize="7dp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="趣看视界"
+        android:textColor="@color/title_color_new"
+        android:textSize="17dp"
+        android:visibility="gone"/>
+</RelativeLayout>

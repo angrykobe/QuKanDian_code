@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+
+    <!--数据库名-->
+    <dbname value="qukandian" />
+
+    <version value="37" />
+
+    <list>
+        <mapping class="com.zhangku.qukandian.bean.ChannelBean"/>
+        <mapping class="com.zhangku.qukandian.bean.SearchHistoryBean"/>
+        <mapping class="com.zhangku.qukandian.bean.DetailsBean"/>
+        <mapping class="com.zhangku.qukandian.bean.PostTextImagesBean"/>
+        <mapping class="com.zhangku.qukandian.bean.PostTextVideosBean"/>
+        <mapping class="com.zhangku.qukandian.bean.PostTextDatasBean"/>
+        <mapping class="com.zhangku.qukandian.bean.LabelTermsBean"/>
+        <mapping class="com.zhangku.qukandian.bean.LocalMessageBean"/>
+        <mapping class="com.zhangku.qukandian.bean.LocalFavoriteBean"/>
+        <mapping class="com.zhangku.qukandian.bean.InformationBean"/>
+        <mapping class="com.zhangku.qukandian.bean.ReadRecordBean"/>
+        <mapping class="com.zhangku.qukandian.bean.TodayNewBean"/>
+        <mapping class="com.zhangku.qukandian.bean.AdsCountsBean"/>
+        <mapping class="com.zhangku.qukandian.bean.AppInfo"/>
+        <mapping class="com.zhangku.qukandian.bean.DownAppBean"/>
+        <mapping class="com.zhangku.qukandian.bean.DownAppBean$BountyTaskStepBean"/>
+        <mapping class="com.zhangku.qukandian.bean.AdLocationBeans$AdLocationsBean$ClientAdvertisesBean"/>
+    </list>
+    <!--<storage value="external"/>-->
+    <storage value="internal"/>
+    <!--
+    -->
+
+    <!-- 直接设置这个，就表示数据库存储的位置，直接打开手机存储就可以找到 -->
+    <!--<storage value="guolin/database"/>-->
+</litepal>

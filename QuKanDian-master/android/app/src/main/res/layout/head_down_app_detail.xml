@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?><!--  
+    类名：   ac_down_app_detail.xml 
+    类名注释       -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:layout_gravity="center_horizontal"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_middle"
+        >
+
+        <ImageView
+            android:id="@+id/appImg"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@mipmap/icon_tz"
+            android:layout_marginRight="@dimen/space_middle"
+            />
+
+        <TextView
+            android:id="@+id/appNameTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="标题"
+            android:textSize="@dimen/text_21_size"
+            android:textColor="@color/gray_3"
+            android:textStyle="bold"
+            android:layout_alignTop="@+id/appImg"
+            android:layout_toRightOf="@+id/appImg"
+            android:layout_marginTop="@dimen/space_small"
+            />
+
+        <TextView
+            android:id="@+id/appInforTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="描述"
+            android:textSize="@dimen/text_15_size"
+            android:textColor="@color/gray_6"
+            android:layout_toRightOf="@+id/appImg"
+            android:layout_below="@+id/appNameTV"
+            android:layout_marginTop="3dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="简介"
+        android:textColor="@color/gray_3"
+        android:textSize="@dimen/text_18_size"
+        android:layout_marginTop="@dimen/space_middle"
+        />
+
+    <TextView
+        android:id="@+id/appDecTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="简介"
+        android:textColor="@color/gray_9"
+        android:textSize="@dimen/text_15_size"
+        android:layout_marginTop="@dimen/space_small"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="40dp"
+        >
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="4dp"
+            android:background="@drawable/share_line_dotted"
+            android:layout_weight="1"
+            android:layerType="software"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_15_size"
+            android:textColor="@color/gray_3"
+            android:text="任务步骤"
+            android:layout_marginLeft="@dimen/space_small"
+            android:layout_marginRight="@dimen/space_small"
+            />
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="4dp"
+            android:background="@drawable/share_line_dotted"
+            android:layout_weight="1"
+            android:layerType="software"
+            />
+    </LinearLayout>
+
+    
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RatioImageView">
+        <attr name="RatioImageView_X" format="integer"/>
+        <attr name="RatioImageView_Y" format="integer"/>
+    </declare-styleable>
+    <declare-styleable name="NumberPicker">
+        <attr name="textColor" format="color"/>
+        <attr name="textSize" format="float|dimension"/>
+        <attr name="startNumber" format="integer"/>
+        <attr name="endNumber" format="integer"/>
+        <attr name="currentNumber" format="integer"/>
+        <attr name="verticalSpacing" format="dimension"/>
+        <attr name="flagText" format="string|reference"/>
+        <attr name="flagTextSize" format="dimension"/>
+        <attr name="flagTextColor" format="color"/>
+        <attr name="backgroundColor" format="color"/>
+        <attr name="rowNumber" format="integer"/>
+    </declare-styleable>
+    <declare-styleable name="SwipeMenuLayout">
+        <attr name="leftViewId" format="reference"/>
+        <attr name="rightViewId" format="reference"/>
+        <attr name="contentViewId" format="reference"/>
+    </declare-styleable>
+    <!-- 自定义环形进度条的属性-->
+    <declare-styleable name="RingProgressView">
+        <attr name="ringColor" format="color"/>
+        <attr name="ringProgressColor" format="color"/>
+        <attr name="ringWidth" format="dimension"/>
+        <attr name="textSize1" format="dimension"/>
+        <attr name="textColor1" format="color"/>
+        <attr name="currentProgress" format="integer"/>
+        <attr name="maxProgress" format="integer"/>
+    </declare-styleable>
+    <!-- 自定的属性-->
+    <declare-styleable name="MeBottomItem">
+        <attr name="title" format="string"/>
+        <attr name="subtitle" format="string"/>
+    </declare-styleable>
+</resources>

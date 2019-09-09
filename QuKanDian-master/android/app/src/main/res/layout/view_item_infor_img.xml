@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/view_item_infor_tab_title"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_centerInParent="true"
+        android:text=""
+        android:gravity="center"
+        android:textColor="@color/selector_color_gray_red"
+        android:textSize="@dimen/text_16_size"
+        />
+
+    <ImageView
+        android:id="@+id/view_item_infor_tab_iv"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/view_item_infor_tab_title"
+        />
+
+    <TextView
+        android:id="@+id/view_item_infor_tab_number_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:background="@drawable/share_recir_red2"
+        android:textColor="@color/white"
+        android:textSize="7dp"
+        android:layout_alignRight="@+id/view_item_infor_tab_iv"
+        android:layout_above="@+id/view_item_infor_tab_iv"
+        android:gravity="center"
+        android:layout_marginBottom="-7dp"
+        android:layout_marginRight="-2dp"
+        android:visibility="gone"
+        android:minWidth="10dp"
+        />
+    <!--android:layout_alignRight="@+id/view_item_infor_tab_iv"-->
+    <!--android:layout_alignTop="@+id/view_item_infor_tab_iv"-->
+</RelativeLayout>

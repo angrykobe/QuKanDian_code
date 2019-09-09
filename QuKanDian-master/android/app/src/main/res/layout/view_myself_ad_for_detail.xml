@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:background="@drawable/select_bgwhite"
+    >
+
+    <!--<com.tencent.smtt.sdk.WebView-->
+        <!--android:id="@+id/linkWebview"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:layout_marginBottom="10dp"-->
+        <!--android:visibility="gone"-->
+        <!--/>-->
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        />
+    <RelativeLayout
+        android:id="@+id/myselfView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <com.zhangku.qukandian.widght.RatioImageView
+            android:id="@+id/imgIV"
+            style="@style/art_image" />
+
+        <TextView
+            android:id="@+id/titleTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_toRightOf="@id/imgIV"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:text="标题                                                                    "
+            android:textColor="@color/black_33"
+            android:textSize="@dimen/information_title_size" />
+
+
+        <ImageView
+            android:id="@+id/mAdSignIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/titleTV"
+            android:layout_alignBottom="@+id/imgIV"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ad_text"
+            />
+
+        <LinearLayout
+            android:id="@+id/bottomView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgIV"
+            android:layout_marginTop="5dp"
+            android:background="@mipmap/ad_bg"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <ImageView
+                android:id="@+id/bottomRedIV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/ad_red" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/ad_icon"
+                android:layout_weight="1"
+                android:text="阅读领取"
+                android:textColor="@color/red_500"
+                android:textSize="12dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>
+

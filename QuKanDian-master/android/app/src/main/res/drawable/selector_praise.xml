@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?><!--  
+    类名：   selector_praisese.xml
+    类名注释  新闻，视频详情是否喜欢      -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@mipmap/zan" android:state_selected="true"/>
+    <item android:drawable="@mipmap/zan_2" android:state_selected="false"/>
+    <item android:drawable="@mipmap/zan_2"/>
+</selector>

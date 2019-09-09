@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_gray_bg_action_bar"/>
+
+    <LinearLayout
+        android:id="@+id/share_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:background="@mipmap/share_income_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"/>
+
+        <TextView
+            android:id="@+id/activity_share_income_layout_money"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textColor="@color/black_33"
+            android:text="12元"
+            android:textSize="25dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5.5"/>
+
+        <ImageView
+            android:id="@+id/activity_share_income_layout_qr"
+            android:layout_width="110dp"
+            android:layout_height="0dp"
+            android:layout_weight="4.3"
+            android:paddingBottom="30dp"
+            android:src="@color/background"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="-30dp"
+            android:gravity="center"
+            android:text="扫码加入趣看视界"
+            android:textColor="@color/black"
+            android:textSize="16dp"/>
+
+        <View
+            android:id="@+id/activity_share_income_layout_place"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#fdefdf"
+        android:paddingBottom="10dp"
+        android:paddingLeft="19dp"
+        android:paddingRight="19dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/activity_share_income_layout_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawablePadding="5dp"
+            android:drawableRight="@mipmap/share_income_edit"
+            android:text="修改金额"
+            android:textColor="#a4160e"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:id="@+id/activity_share_income_layout_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/share_income_btn_bg"
+            android:gravity="center"
+            android:paddingBottom="2dp"
+            android:text="晒收入炫耀一下"
+            android:textColor="#a4160e"
+            android:textSize="18dp"/>
+    </RelativeLayout>
+</LinearLayout>

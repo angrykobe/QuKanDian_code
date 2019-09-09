@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/titleBackIV"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/selector_common_btn_bg"
+            android:padding="15dp"
+            android:src="@mipmap/nav_back_green_icon" />
+
+        <TextView
+            android:id="@+id/titleTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/title_color_new"
+            android:textSize="@dimen/information_title_size"
+            android:text="收徒"/>
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/webprogressBar"
+        style="@style/web_progressbar" />
+
+    <com.tencent.smtt.sdk.WebView
+        android:id="@+id/activity_new_url_web"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

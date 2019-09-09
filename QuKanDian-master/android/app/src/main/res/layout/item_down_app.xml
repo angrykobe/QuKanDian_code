@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?><!--  
+    类名：   item_down_app.xml 
+    类名注释       -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/stedNameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="步骤一"
+        android:textSize="@dimen/text_15_size"
+        android:textColor="@color/gray_6"
+        android:paddingTop="11dp"
+        android:paddingBottom="11dp"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/RecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

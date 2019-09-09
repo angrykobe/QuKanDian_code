@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="13dp"
+        android:text="您的微信已绑定多个账号，一个微信只能绑定一个账号。请重新选择，进行绑定。"
+        android:textColor="@color/login_edit_gray_bg_color"
+        android:textSize="14dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/update_wechat_bind_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/grey_e5"/>
+
+    <TextView
+        android:id="@+id/update_wechat_bind_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:background="@mipmap/login_register_bg_icon"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:textSize="18dp"/>
+</LinearLayout>

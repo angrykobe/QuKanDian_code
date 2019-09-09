@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+    类名：   share_recir_yellow.xml
+    类名注释       -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+
+    <corners android:radius="100dp" />
+    <solid android:color="#F54D38" />
+</shape>

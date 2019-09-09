@@ -1,0 +1,262 @@
+apply plugin: 'com.android.application'
+android {
+    compileSdkVersion 27
+    buildToolsVersion '27.0.3'
+    defaultConfig {
+        applicationId "com.zhangku.qukandian"
+        minSdkVersion 16
+        targetSdkVersion 27
+        versionCode 20190806
+        versionName "2.9.8.6"
+        testInstrumentationRunner "android.support.view_level.runner.AndroidJUnitRunner"
+        // 方法数突破64k的限制
+        multiDexEnabled true
+        vectorDrawables.useSupportLibrary = true
+        flavorDimensions "qkd"
+        resConfigs "en", "zh-rCN"
+        ndk {
+            //选择要添加的对应cpu类型的.so库。
+            abiFilters 'armeabi'
+            // 还可以添加 , 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64', 'mips', 'mips64'
+        }
+        manifestPlaceholders = [
+                JPUSH_PKGNAME: "com.zhangku.qukandian",
+                JPUSH_APPKEY : "b427483eaad111cac62235b5",
+                JPUSH_CHANNEL: "developer-default",
+                XIAOMI_APPKEY: "MI-5571757146292",
+                XIAOMI_APPID : "MI-2882303761517571292",
+                HUAWEI_APPID : "100009793",
+                MEIZU_APPKEY : "MZ-55dc1ba5d6d346cab359b6c5a27bb970",
+                MEIZU_APPID  : "MZ-111721"
+        ]
+    }
+    //签名钥匙
+    signingConfigs {
+        release {
+            v1SigningEnabled true
+            v2SigningEnabled true
+            storePassword 'xmzhangku'
+            storeFile file('../qukandian.jks')
+            keyAlias 'key0'
+            keyPassword 'xmzkqukandian'
+        }
+        debug {
+            v1SigningEnabled true
+            v2SigningEnabled true
+            storePassword 'xmzhangku'
+            storeFile file('../qukandian.jks')
+            keyAlias 'key0'
+            keyPassword 'xmzkqukandian'
+        }
+    }
+
+    buildTypes {
+        release {
+            // 不显示Log
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            //混淆
+            minifyEnabled true
+            //Zipalign优化
+            zipAlignEnabled true
+            // 移除无用的resource文件
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            debuggable false
+
+//            //签名
+            signingConfig signingConfigs.release
+        }
+        debug {
+            minifyEnabled false
+            signingConfig signingConfigs.release
+
+//            //Zipalign优化
+//            zipAlignEnabled true
+//            // 移除无用的resource文件
+//            shrinkResources true
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//            debuggable false
+        }
+        lintOptions {
+            abortOnError false
+            checkReleaseBuilds false
+            // 防止在发布的时候出现因MissingTranslation导致Build Failed!
+//            disable 'MissingTranslation'
+        }
+    }
+
+    //打包渠道
+    productFlavors {
+//        Market91{dimension "qkd" }
+//        baiduMarket{dimension "qkd" }
+        gw { dimension "qkd" }
+
+    }
+
+    productFlavors.all {
+        flavor -> flavor.manifestPlaceholders = [CHANNEL_NAME: name]
+    }
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+    /* configurations.all {
+        resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+            def requested = details.requested
+            if (requested.group == 'com.android.support') {
+                if (!requested.name.startsWith("multidex")) {
+                    details.useVersion '2.9.6.4'
+                }
+            }
+        }
+    }*/
+}
+
+repositories {
+    mavenLocal()
+    //阿里云仓库
+    maven {
+        url "http://maven.aliyun.com/nexus/content/repositories/releases"
+    }
+
+    mavenCentral()
+    jcenter()
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation project(':recyclerview-swipe')
+    implementation 'com.android.support:multidex:1.0.1'
+    implementation 'com.androidkun:XTabLayout:1.1.3'
+    implementation project(':wkvideoplayer')
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.9.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    implementation 'com.github.bumptech.glide:glide:4.8.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.8.0'
+    implementation 'com.aitangba:swipeback:1.0.1'
+    implementation files('libs/android-query-full.0.26.7.jar')
+    implementation files('libs/HapticMediaSync-v1.4.10.jar')
+    implementation files('libs/litepal-1.5.1.jar')
+    implementation files('libs/SocialSDK_QQ_Simplify.jar')
+    implementation files('libs/SocialSDK_sms.jar')
+    implementation files('libs/SocialSDK_Sina_Simplify.jar')
+    implementation files('libs/SocialSDK_WeChat_Simplify.jar')
+    implementation files('libs/umeng-analytics-v6.1.0.jar')
+    implementation files('libs/umeng_social_api.jar')
+    implementation files('libs/umeng_social_net.jar')
+    implementation files('libs/zixing-core-3.2.0.jar')
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.8'
+    implementation files('libs/tbs_sdk_thirdapp_v3.5.0.1004_43500_sharewithdownload_withoutGame_obfs_20170801_113025.jar')
+    implementation 'com.wanjian:cockroach:0.0.5'
+    implementation files('libs/shulian.sdk.jar')
+    //其中latest.release指代最新Bugly SDK版本号，也可以指定明确的版本号，例如2.1.9
+    implementation 'com.tencent.bugly:nativecrashreport:latest.release'
+    //其中latest.release指代最新Bugly NDK版本号，也可以指定明确的版本号，例如3.0
+    implementation 'com.tencent.bugly:crashreport:latest.release'
+    implementation files('libs/XWan_android_1.0.4.jar')
+    implementation 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:5.1.4'
+    implementation files('libs/wxshare.jar')
+    //???
+    implementation files('libs/Baidu_AdManager_SDK.jar')
+    //百度sdk广告
+    implementation files('libs/Baidu_MobAds_SDK_180622.jar')
+    //推啊sdk广告
+    implementation 'com.tuia:sdk:2.2.5'
+    //广点通sdk广告
+    implementation files('libs/GDTUnionSDK.4.19.574.min.jar')
+    //添加搜狗SDK时需要在build.gradle⽂件添加⼀下第三⽅依赖，若有则⽆需添加，否则⼴告⽆法展示：
+
+    //    compile 'com.squareup.okhttp3:logging-interceptor:3.9.0'
+
+    //    compile 'com.squareup.okhttp3:okhttp:3.9.0'
+
+    //360广告
+    implementation files('libs/akad_4.2.3042_1019.jar')
+    implementation files('libs/TypeBuilder-1.0.jar')
+    //权限
+    implementation 'pub.devrel:easypermissions:1.0.1'
+    implementation 'com.android.support:design:27.1.0'
+    implementation 'com.android.support:recyclerview-v7:27.1.0'
+    implementation 'com.android.support:appcompat-v7:27.1.0'
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-14'
+    //没有使用特殊Header，可以不加这行
+    implementation 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.0-alpha-14'
+    implementation 'org.greenrobot:eventbus:3.1.1'
+    //阅盟sdk
+    implementation "com.android.support:support-compat:27.1.0"
+    implementation "com.android.support:support-core-utils:27.1.0"
+    implementation "com.android.support:support-fragment:27.1.0"
+    //    implementation files('libs/YmAdsdk20190108_v3.51.aar')
+    implementation files('libs/YmSdk20190521.aar')
+    //极光广告
+    implementation files('libs/jcore-android-1.2.5.jar')
+    implementation files('libs/jsspsdk-android-release-1.0.4.jar')
+    //极光推送
+    implementation 'cn.jiguang.sdk:jpush:3.1.1'
+    implementation 'cn.jiguang.sdk.plugin:meizu:3.1.1'
+    implementation 'cn.jiguang.sdk.plugin:huawei:3.1.1'
+    implementation 'cn.jiguang.sdk.plugin:xiaomi:3.1.1'
+    //今日头条
+    implementation(name: 'open_ad_sdk', ext: 'aar')
+    //艺坛、火盟
+
+    //    implementation files('libs/hmsdk-1.4.8.aar')
+    implementation files('libs/hmsdk-1.5.2-20190522.aar')
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.5.4'
+    releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.4'
+    // 各种工具 https://github.com/Blankj/AndroidUtilCode
+    implementation 'com.blankj:utilcode:1.23.7'
+    //云告聚合搜索
+    implementation files('libs/searchsdk-v2.1.1.aar')
+    //上传文件   :  https://github.com/Tamicer/Novate/wiki
+
+    //    implementation 'com.tamic.novate:novate:1.5.5'
+
+    //https://www.openinstall.io/doc/android_sdk.html#
+    implementation files('libs/OpenInstall_v2.2.2.jar')
+    //https://github.com/yaozs/ImageShowPicker  图片上传控件
+    implementation 'com.github.yaozs:ImageShowPicker:1.0.1'
+    implementation 'com.zhihu.android:matisse:0.5.2-beta2'
+    implementation 'com.yanzhenjie:permission:1.0.7'
+    //end
+
+    //好兔视频
+    implementation('com.aliyun.ams:alicloud-android-httpdns:1.2.3@aar') {
+        transitive true
+    }
+    implementation "com.yilan.sdk:ui:1.0.10"
+    implementation 'com.squareup.okhttp3:okhttp:3.11.0'
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'jp.wasabeef:glide-transformations:3.1.1'
+    //end
+
+    //豹趣游戏
+    implementation files('libs/cmgame-sdk-tt2011-1.0.9.aar')
+    // 以下为小游戏 sdk 需要使用到的公共类库
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.10"
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.11.0'
+    //end
+
+    //https://github.com/daimajia/NumberProgressBar
+    implementation 'com.daimajia.numberprogressbar:library:1.4@aar'
+    //风灵广告
+    implementation project(path: ':felinksdk-release', configuration: 'exclude')
+    //风灵广告相关
+    //compile(name: 'android-gif-drawable-1.2.6', ext: 'aar')
+    implementation 'com.mcxiaoke.volley:library:1.0.19'
+    //compile 'com.github.bumptech.glide:glide:4.0.0'
+    compile(name: 'circleimageview-2.2.0', ext: 'aar')
+    compile(name: 'LayoutManagerGroup', ext: 'aar')
+    //多游游戏相关
+    implementation(name: 'dy-ad-sdk-1.5', ext: 'aar')
+    testCompile 'junit:junit:4.12'
+    androidTestCompile 'org.testng:testng:6.9.6'
+}

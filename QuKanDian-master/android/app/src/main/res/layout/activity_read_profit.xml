@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?><!--  
+    类名：   activity_read_profit.xml 
+    类名注释    阅读收益   -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/statusBar"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/main_red" />
+
+    <!--头部布局-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_red">
+
+        <ImageView
+            android:id="@+id/titleBackIV"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/selector_common_btn_bg"
+            android:padding="15dp"
+            android:src="@mipmap/nav_back_normal" />
+
+        <TextView
+            android:id="@+id/titleTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="阅读收益"
+            android:textColor="@color/white"
+            android:textSize="@dimen/information_title_size" />
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/url_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/read_profit_1"
+                android:scaleType="fitXY"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/read_profit_2"
+                android:orientation="vertical"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_marginRight="@dimen/space_small"
+                        android:src="@drawable/share_circle_yellow" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/read_profit_infor_1"
+                        android:textColor="@color/gray_3"
+                        android:textSize="@dimen/text_15_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_middle"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_marginRight="@dimen/space_small"
+                        android:src="@drawable/share_circle_yellow" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/read_profit_infor_2"
+                        android:textColor="@color/gray_3"
+                        android:textSize="@dimen/text_15_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_middle"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_marginRight="@dimen/space_small"
+                        android:src="@drawable/share_circle_yellow" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/read_profit_infor_3"
+                        android:textColor="@color/gray_3"
+                        android:textSize="@dimen/text_15_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_middle"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_marginRight="@dimen/space_small"
+                        android:src="@drawable/share_circle_yellow" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/read_profit_infor_4"
+                        android:textColor="@color/gray_3"
+                        android:textSize="@dimen/text_15_size" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/read_profit_3"
+                android:scaleType="fitXY" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/read_profit_4"
+                android:orientation="vertical"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                >
+
+                <TextView
+                    android:id="@+id/profitLoginTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/read_profit_goto_login_str"
+                    android:textColor="#A97137"
+                    android:textSize="@dimen/text_14_size" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/readProfitRecy"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="top"
+                    />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/read_profit_5"
+                android:scaleType="fitXY" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/space_small"
+        android:paddingLeft="@dimen/space_big"
+        android:paddingRight="@dimen/space_big">
+        <!--无登录时候登录提示按钮-->
+        <TextView
+            android:id="@+id/profitGoLoginTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/read_profit_btn"
+            android:gravity="center"
+            android:paddingBottom="3dp"
+            android:text="@string/read_profit_goto_login_btn"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_17_size"
+            android:textStyle="bold"
+            android:visibility="gone" />
+        <!--今日阅读收益-->
+        <LinearLayout
+            android:id="@+id/profitShowMoneyView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/read_profit_today_income"
+                android:textColor="@color/gray_3"
+                android:textSize="@dimen/text_16_size" />
+
+            <TextView
+                android:id="@+id/profitMoneyTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/main_red"
+                android:textSize="@dimen/text_16_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="金币"
+                android:textColor="@color/main_red"
+                android:textSize="@dimen/text_16_size" />
+
+            <TextView
+                android:id="@+id/profitGotoIncomeDetailsTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_sign_radio"
+                android:paddingBottom="@dimen/space_small"
+                android:paddingLeft="@dimen/space_middle"
+                android:paddingRight="@dimen/space_middle"
+                android:paddingTop="@dimen/space_small"
+                android:text="@string/read_profit_goto_detail"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_16_size" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

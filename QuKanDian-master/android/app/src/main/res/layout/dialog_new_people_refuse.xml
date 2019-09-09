@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    >
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/share_rect_corner_bgwhite"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/space_big"
+        android:paddingRight="@dimen/space_big"
+        android:paddingBottom="@dimen/space_middle"
+        android:layout_marginTop="60dp"
+        android:paddingTop="60dp"
+        android:layout_marginBottom="40dp"
+        android:layout_gravity="center_horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="为了让您快速玩转趣看视界 "
+            android:textColor="@color/gray_6"
+            android:textSize="@dimen/text_17_size" />
+
+        <TextView
+            android:id="@+id/contentTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_middle"
+            android:text="赚取更多收益"
+            android:textColor="#FF5150"
+            android:textSize="@dimen/text_20_size" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_small"
+            android:text="现在跟着小趣一起开启财富之旅吧！"
+            android:textColor="@color/gray_6"
+            android:gravity="center"
+            android:textSize="@dimen/text_17_size" />
+
+        <TextView
+            android:id="@+id/doneOtherTaskBtn"
+            android:layout_width="212dp"
+            android:layout_height="43dp"
+            android:background="@drawable/share_rect_corners_red_1"
+            android:gravity="center"
+            android:text="GO>"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_16_size"
+            android:layout_marginTop="38dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="133dp"
+        android:layout_height="116dp"
+        android:src="@mipmap/icon_01"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <TextView
+        android:id="@+id/cancleTV"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="狠心拒绝"
+        android:textColor="@color/FDD15C"
+        android:textSize="@dimen/text_16_size"
+        android:padding="@dimen/space_small"
+        android:layout_gravity="bottom|center_horizontal"
+        />
+
+</FrameLayout>

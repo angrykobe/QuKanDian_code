@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_fillet_bg"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dialog_permissions_remind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:lineSpacingExtra="5dp"
+        android:text="当前应用缺少必要权限，该功能暂时无法使用。如若需要，请单击【确定】按钮前往设置中心进行权限授权。"
+        android:textColor="@color/red_fc"
+        android:textSize="15dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:paddingLeft="20dp"
+        android:gravity="center"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:id="@+id/dialog_permissions_cancel"
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:background="@mipmap/login_gray_bg"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="取消"/>
+
+        <TextView
+            android:id="@+id/dialog_permissions_confirm"
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:background="@mipmap/login_login_btn_bg"
+            android:gravity="center"
+            android:textColor="@color/red"
+            android:text="确定"/>
+    </LinearLayout>
+</LinearLayout>

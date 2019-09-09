@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?><!--  
+    类名：   selector_red_gray.xml 
+    类名注释     每日连续签到  -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="@color/white" android:state_selected="true"/>
+    <item android:color="#FC923C" />
+</selector>

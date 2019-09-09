@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?><!--  
+    类名：   ac_video_end_card.xml 
+    类名注释       -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+    <ImageView
+        android:id="@+id/bgIV"
+        android:layout_width="match_parent"
+        android:layout_height="217dp"
+        android:background="#50ff00ff"
+        android:src="@mipmap/icon_10"
+        android:scaleType="fitEnd"
+        />
+
+    <ImageView
+        android:id="@+id/iconIV"
+        android:layout_width="79dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="-40dp"
+        android:background="@mipmap/icon_home_crown" />
+
+    <TextView
+        android:id="@+id/titleTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_small"
+        android:text="魔兽"
+        android:textColor="@color/gray_3"
+        android:textSize="21dp"
+        android:maxEms="10"
+        android:minLines="1"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/space_small"
+        >
+
+        <TextView
+            android:id="@+id/ratingBarTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4.0"
+            android:textColor="@color/gray_9"
+            android:textSize="@dimen/text_18_size" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="@style/Base.Widget.AppCompat.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:numStars="5"
+            android:rating="1.5"
+            android:layout_marginLeft="@dimen/space_small"
+            android:layout_marginRight="@dimen/space_small"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/gray_9"
+            android:textSize="@dimen/text_10_size"
+
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/subtitleTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_middle"
+        android:text="“ 潮流武侠，炫动江湖 ”"
+        android:textSize="@dimen/text_16_size"
+        android:textColor="@color/gray_3"
+        android:layout_marginLeft="@dimen/space_big"
+        android:layout_marginRight="@dimen/space_big"
+        />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        />
+
+    <TextView
+        android:id="@+id/downTV"
+        android:layout_width="307dp"
+        android:layout_height="47dp"
+        android:background="@drawable/share_recir_blue"
+        android:text="立即下载"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_16_size"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/space_big"
+        android:layout_marginBottom="100dp"
+        />
+
+
+
+</LinearLayout>

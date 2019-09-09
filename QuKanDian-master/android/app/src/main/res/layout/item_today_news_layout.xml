@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="115dp"
+              android:background="@color/grey_f2"
+              android:gravity="center_vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="-22dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/vertical_dotted_line"
+            android:layerType="software"/>
+
+        <TextView
+            android:id="@+id/item_today_news_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="8:38"
+            android:textColor="#f35650"
+            android:textSize="14dp"/>
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="85dp"
+            android:layout_marginLeft="-20dp"
+            android:layout_marginRight="-20dp"
+            android:background="@drawable/vertical_dotted_line"
+            android:layerType="software"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:layout_marginRight="10dp"
+        android:background="@mipmap/today_news_item_bg"
+        android:paddingBottom="6dp"
+        android:paddingRight="10dp"
+        android:gravity="center_vertical"
+        android:paddingTop="6dp">
+
+        <TextView
+            android:id="@+id/item_today_news_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:lineSpacingExtra="5dp"
+            android:lines="2"
+            android:paddingLeft="19dp"
+            android:textColor="#2b2b2b"
+            android:textSize="18dp"/>
+
+        <ImageView
+            android:id="@+id/item_today_news_img"
+            android:layout_width="89dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="22dp"
+            android:scaleType="centerCrop"/>
+    </LinearLayout>
+</LinearLayout>

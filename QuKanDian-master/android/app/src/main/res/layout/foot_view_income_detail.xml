@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?><!--  
+    类名：   foot_view_income_detail.xml 
+    类名注释    收入明细底部   -->
+<!--<FrameLayout -->
+    <!--android:orientation="vertical" android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+    <TextView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="系统只保留最近3天的收入明细"
+        android:textSize="@dimen/text_14_size"
+        android:textColor="@color/gray_9"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        />
+
+<!--</FrameLayout>-->

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?><!--  
+    类名：   view_sign_day.xml 
+    类名注释    每日连续签到底部天数   -->
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/selector_sign_everyday"
+        android:text="+100"
+        android:textSize="@dimen/text_12_size"
+        android:textColor="@color/selector_white_org"
+        android:gravity="center"
+        />
+</FrameLayout>

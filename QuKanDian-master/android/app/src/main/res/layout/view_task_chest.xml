@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?><!--  
+    类名：   view_task_chest.xml 
+    类名注释       -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:orientation="vertical"
+    android:padding="@dimen/space_small">
+
+    <TextView
+        android:id="@+id/titleTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/task_chest_title"
+        android:textColor="@color/gray_3"
+        android:textSize="@dimen/text_12_size" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_big"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:orientation="horizontal">
+        <!--&lt;!&ndash;需求去掉&ndash;&gt;-->
+        <!--<TextView-->
+        <!--android:id="@+id/mTaskNumTV"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:text="3/7"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:visibility="invisible"-->
+        <!--/>-->
+        <FrameLayout style="@style/chest_top_fl">
+
+            <ImageView
+                android:id="@+id/mOneTaskAnimImg"
+                style="@style/chest_top_anim_iv" />
+
+            <ImageView
+                android:id="@+id/mOneTaskImg"
+                style="@style/chest_top_iv"
+                android:src="@drawable/selec_task_box_coppe" />
+
+        </FrameLayout>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <FrameLayout style="@style/chest_top_fl">
+
+            <ImageView
+                android:id="@+id/mTwoTaskAnimImg"
+                style="@style/chest_top_anim_iv" />
+
+            <ImageView
+                android:id="@+id/mTwoTaskImg"
+                style="@style/chest_top_iv"
+                android:src="@drawable/selec_task_box_silver" />
+
+        </FrameLayout>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <FrameLayout style="@style/chest_top_fl">
+
+            <ImageView
+                android:id="@+id/mThreeTaskAnimImg"
+                style="@style/chest_top_anim_iv" />
+
+            <ImageView
+                android:id="@+id/mThreeTaskImg"
+                style="@style/chest_top_iv"
+                android:src="@drawable/selec_task_box_gold" />
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="18dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="@dimen/space_small"
+        android:layout_marginRight="16dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/pic_c" />
+
+        <!--<LinearLayout-->
+        <!--android:id="@+id/mOneTaskView"-->
+        <!--style="@style/chest_ll"-->
+        <!--android:layout_weight="95"-->
+        <!--&gt;-->
+        <!--<ImageView-->
+        <!--style="@style/chest_line"-->
+        <!--/>-->
+        <!--<ImageView-->
+        <!--style="@style/chest_img"-->
+        <!--/>-->
+        <!--</LinearLayout>-->
+
+        <LinearLayout
+            android:id="@+id/mTwoTaskView"
+            style="@style/chest_center_ll"
+            android:layout_weight="100">
+
+            <ImageView style="@style/chest_center_line" />
+
+            <ImageView style="@style/chest_center_img" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mThreeTaskView"
+            style="@style/chest_center_ll"
+            android:layout_weight="100">
+
+            <ImageView style="@style/chest_center_line" />
+
+            <ImageView style="@style/chest_center_img" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="@dimen/space_small"
+        android:orientation="horizontal">
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:text="开始"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:textSize="@dimen/text_11_size"-->
+        <!--/>-->
+        <TextView
+            android:id="@+id/mOneTaskTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="开始"
+            android:textSize="@dimen/text_11_size" />
+
+        <TextView
+            android:id="@+id/mTwoTaskTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="开始"
+            android:textSize="@dimen/text_11_size" />
+
+        <TextView
+            android:id="@+id/mThreeTaskTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="开始"
+            android:textSize="@dimen/text_11_size" />
+    </LinearLayout>
+</LinearLayout>

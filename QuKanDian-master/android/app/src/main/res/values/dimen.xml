@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="layout_title_height">48dp</dimen>
+    <dimen name="information_title_size">18dp</dimen>
+    <dimen name="text_17_size">17dp</dimen>
+    <dimen name="text_18_size">18dp</dimen>
+    <dimen name="text_19_size">19dp</dimen>
+    <dimen name="text_13_size">13dp</dimen>
+    <dimen name="information_infor_size">11dp</dimen>
+    <dimen name="text_8_size">8dp</dimen>
+    <dimen name="text_9_size">9dp</dimen>
+    <dimen name="text_10_size">10dp</dimen>
+    <dimen name="text_11_size">11dp</dimen>
+    <dimen name="text_12_size">12dp</dimen>
+    <dimen name="text_14_size">14dp</dimen>
+    <dimen name="text_15_size">15dp</dimen>
+    <dimen name="text_16_size">16dp</dimen>
+    <dimen name="text_20_size">20dp</dimen>
+    <dimen name="text_21_size">21dp</dimen>
+    <dimen name="text_26_size">26dp</dimen>
+    <dimen name="text_30_size">30dp</dimen>
+    <dimen name="item_height">60dp</dimen>
+    <dimen name="status_height">70dp</dimen>
+
+
+    <dimen name="space_small">8dp</dimen>
+    <dimen name="space_middle">14dp</dimen>
+    <dimen name="space_big">20dp</dimen>
+
+    <dimen name="custom_header_padding_h">12dp</dimen>
+    <dimen name="custom_header_padding_v">4dp</dimen>
+</resources>

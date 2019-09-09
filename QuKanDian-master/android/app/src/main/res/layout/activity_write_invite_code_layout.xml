@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_gray_bg_action_bar"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/grey_dc"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="13dp"
+                android:layout_marginLeft="19dp"
+                android:layout_marginRight="19dp"
+                android:layout_marginTop="21dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="输入好友邀请码即可获得大量金币奖励噢～"
+                    android:textColor="@color/black_33"
+                    android:textSize="@dimen/text_15_size"/>
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="0.2~1"-->
+                    <!--android:textColor="#ec3615"-->
+                    <!--android:textSize="@dimen/text_15_size"/>-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="元奖励噢~"-->
+                    <!--android:textColor="@color/black_33"-->
+                    <!--android:textSize="@dimen/text_15_size"/>-->
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/activity_write_invite_code_edit"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:layout_marginLeft="19dp"
+                android:layout_marginRight="19dp"
+                android:background="@color/white"
+                android:hint="填写邀请码(向介绍人索取)"
+                android:inputType="number"
+                android:lines="1"
+                android:padding="7dp"
+                android:textColorHint="#999999"
+                android:textSize="@dimen/text_15_size"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="19dp"
+                android:layout_marginRight="19dp"
+                android:background="@color/grey_f2"/>
+
+            <TextView
+                android:id="@+id/activity_write_invite_code_submit"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="19dp"
+                android:layout_marginRight="19dp"
+                android:layout_marginTop="13dp"
+                android:background="@mipmap/btn_red_bg"
+                android:gravity="center"
+                android:text="提交邀请码"
+                android:textColor="@color/white"
+                android:textSize="18dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="7dp"
+                android:background="@color/grey_f2"/>
+
+            <com.zhangku.qukandian.widght.RatioImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="27dp"
+                android:src="@mipmap/invite_icon"
+                app:RatioImageView_X="75"
+                app:RatioImageView_Y="42"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="19dp"
+                android:layout_marginRight="19dp"
+                android:text="1.邀请好友赚25000金币奖励"
+                android:textColor="@color/black_1b"
+                android:textSize="@dimen/text_15_size"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="19dp"
+                android:layout_marginRight="19dp"
+                android:layout_marginTop="5dp"
+                android:text="2.获得好友源源不断的进贡金币"
+                android:textColor="@color/black_1b"
+                android:textSize="@dimen/text_15_size"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="19dp"
+                android:layout_marginRight="19dp"
+                android:layout_marginTop="5dp"
+                android:text="3.如果您每天邀请10位好友,一个月可轻松赚千元"
+                android:textColor="@color/black_1b"
+                android:textSize="@dimen/text_15_size"/>
+
+            <TextView
+                android:id="@+id/activity_write_invite_code_invite"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginBottom="40dp"
+                android:layout_marginLeft="19dp"
+                android:layout_marginRight="19dp"
+                android:layout_marginTop="22dp"
+                android:background="@mipmap/btn_red_bg"
+                android:gravity="center"
+                android:text="邀请好友去赚钱"
+                android:textColor="@color/white"
+                android:textSize="18dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

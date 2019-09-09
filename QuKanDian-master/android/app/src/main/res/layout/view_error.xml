@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?><!--  
+    类名：   view_error.xml 
+    类名注释       -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/errorView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:id="@+id/errorIV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/empty_netword" />
+
+    <TextView
+        android:id="@+id/errorTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/errorIV"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:text="网络有问题~"
+        android:textColor="@color/gray_9"
+        android:textSize="@dimen/text_16_size" />
+</RelativeLayout>

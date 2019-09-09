@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/transparent"
+    android:gravity="center"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/share_rect_corner_bgwhite">
+
+        <LinearLayout
+            android:id="@+id/bodyView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:layout_centerInParent="true"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="轻松、快速、无本赚零花"
+                android:textSize="21dp"
+                android:textColor="@color/gray_3"
+                android:textStyle="bold"
+                android:layout_marginTop="34dp"
+                />
+
+            <TextView
+                android:id="@+id/mUserNumTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_14_size"
+                android:textColor="@color/gray_3"
+                android:layout_marginTop="30dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="送您一个现金红包"
+                android:textSize="@dimen/text_17_size"
+                android:textColor="@color/gray_3"
+                android:layout_marginTop="@dimen/space_middle"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="（仅限新注册用户领取）"
+                android:textColor="@color/gray_9"
+                android:textSize="@dimen/text_14_size"
+                android:layout_marginTop="@dimen/space_small"
+                android:visibility="gone"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/new_people_red"
+                android:layout_marginTop="@dimen/space_middle"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="当日即可提现"
+                android:textColor="@color/gray_6"
+                android:textSize="@dimen/text_14_size"
+                android:layout_marginTop="@dimen/space_small"
+                />
+
+            <TextView
+                android:id="@+id/submitTV"
+                android:layout_width="212dp"
+                android:layout_height="45dp"
+                android:text="打开最高得10元"
+                android:background="@drawable/share_btn_bgred_radio"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_marginTop="@dimen/space_big"
+                android:layout_marginBottom="27dp"
+                android:textSize="@dimen/text_16_size"
+                />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="38dp"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_bj2"
+            android:layout_alignRight="@+id/bodyView"
+            android:layout_alignTop="@+id/bodyView"
+            android:layout_marginLeft="-20dp"
+            android:layout_marginTop="80dp"
+            />
+
+        <ImageView
+            android:layout_width="38dp"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_bj1"
+            android:layout_alignLeft="@+id/bodyView"
+            android:layout_alignBottom="@+id/bodyView"
+            android:layout_marginBottom="80dp"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/cancleTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="先去逛逛"
+        android:textColor="@color/FDD15C"
+        android:textSize="@dimen/text_16_size"
+        android:padding="@dimen/space_small"
+        />
+
+</LinearLayout>

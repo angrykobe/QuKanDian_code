@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/grey_e5"/>
+
+    <LinearLayout
+        android:id="@+id/withdrawalsBindWechatView"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:background="#fff6ef"
+        android:gravity="center_vertical"
+        android:paddingLeft="19dp"
+        android:paddingRight="18dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@mipmap/withdrawals_wechat_icon"
+            android:drawablePadding="7dp"
+            android:text="绑定微信账号立即提现!"
+            android:textColor="#4E3818"
+            android:textSize="16dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/withdrawals_binging_btn"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_e5"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:text="合计消耗:"
+            android:textColor="@color/black_33"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/mWithdrawalsSumGoldTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19dp"
+            android:layout_weight="1"
+            android:text="0金币"
+            android:textColor="@color/main_red"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/withdrawalsSubmitBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="18dp"
+            android:background="@mipmap/withdrawble_red_btn_bg"
+            android:gravity="center"
+            android:text="提现"
+            android:textColor="@color/black_33"
+            android:textSize="14dp"/>
+    </LinearLayout>
+</LinearLayout>

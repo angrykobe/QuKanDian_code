@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?><!--  
+    类名：   view_ad_view_pager.xml 
+    类名注释    广告viewpager布局   -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/me_banner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/me_position_01"
+            android:layout_width="7dp"
+            android:layout_height="7dp"
+            android:layout_weight="1"
+            android:background="@drawable/guid_postion_selected"/>
+
+        <ImageView
+            android:id="@+id/me_position_02"
+            android:layout_width="7dp"
+            android:layout_height="7dp"
+            android:layout_marginLeft="9dp"
+            android:layout_marginRight="9dp"
+            android:layout_weight="1"
+            android:background="@drawable/guid_postion_selected"/>
+
+        <ImageView
+            android:id="@+id/me_position_03"
+            android:layout_width="7dp"
+            android:layout_height="7dp"
+            android:layout_weight="1"
+            android:background="@drawable/guid_postion_selected"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?><!--  
+    类名：   ids.xml
+    类名注释       -->
+<resources>
+    <!--对齐id-->
+    <item name="just_alignment" type="id"/>
+
+
+    <item name="task_chest_tv" type="id"/>
+
+</resources>

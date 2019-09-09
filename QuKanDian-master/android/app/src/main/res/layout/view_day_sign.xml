@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?><!--  
+    类名：   view_day_sign.xml 
+    类名注释    每日签到控件   -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_task_frg"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="13dp"
+        android:paddingRight="18dp"
+        android:paddingTop="@dimen/space_middle"
+        android:paddingBottom="@dimen/space_small"
+        >
+
+        <TextView
+            android:id="@+id/titleTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="签到送金币"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_16_size"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/signTV"
+            android:layout_alignBottom="@+id/signTV"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/descTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="每日签到领金币，连续签到+50"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_13_size"
+            android:layout_below="@+id/signTV"
+            android:layout_alignParentLeft="true"
+            android:maxEms="14"
+            android:ellipsize="end"
+            android:maxLines="1"
+            />
+
+        <TextView
+            android:id="@+id/signTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="签到"
+            android:textColor="@color/selector_org_white"
+            android:textSize="@dimen/text_14_size"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/selector_recir_white_"
+            android:gravity="center"
+            android:paddingTop="@dimen/space_small"
+            android:paddingBottom="@dimen/space_small"
+            android:ems="6"
+            />
+        <!--android:background="@drawable/selector_sign_radio"-->
+
+        <TextView
+            android:id="@+id/continuityTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已连续签到天"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_11_size"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="3dp"
+            android:layout_below="@+id/signTV"
+            android:gravity="center"
+            android:layout_alignLeft="@+id/signTV"
+            android:layout_alignRight="@+id/signTV"
+            android:singleLine="true"
+            />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="@dimen/space_small"
+        android:paddingLeft="@dimen/space_small"
+        android:paddingBottom="@dimen/space_big"
+        >
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

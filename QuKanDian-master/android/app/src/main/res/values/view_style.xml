@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?><!--  
+    类名：   view_style.xml
+    类名注释     视图统一配置  -->
+<resources>
+
+    <style name="web_progressbar" parent="Base.Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:layout_height">2dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:max">100</item>
+        <item name="android:progressDrawable">@drawable/color_progressbar</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="login_bottom_btn">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/gray_9</item>
+        <item name="android:textSize">@dimen/text_10_size</item>
+        <item name="android:gravity">center</item>
+        <item name="android:ems">9</item>
+    </style>
+    <!--我的 今日收益 我的余额  我的徒弟-->
+    <style name="my_fragment_top_of_three_title">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textColor">@color/gray_9</item>
+        <item name="android:textSize">@dimen/text_12_size</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="my_fragment_top_of_three_sum">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textColor">@color/gray_3</item>
+        <item name="android:textSize">@dimen/text_17_size</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">@dimen/space_small</item>
+    </style>
+    <!--我的 提现兑换 我的钱包 邀请好友 兑换商城-->
+    <style name="my_fragment_top_of_four_img">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:id">@id/just_alignment</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">@dimen/space_small</item>
+    </style>
+
+    <style name="my_fragment_top_of_four_text">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textColor">@color/gray_6</item>
+        <item name="android:textSize">@dimen/text_11_size</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">@dimen/space_small</item>
+        <item name="android:layout_below">@+id/just_alignment</item>
+    </style>
+
+
+    <!--通用LinearLayout 平分-->
+    <style name="common_ll_weight_horizontal">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="common_ll_weight_vertical">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <!--文章图片imageview-->
+    <style name="art_image">
+        <item name="android:layout_width">110dp</item>
+        <item name="android:layout_height">76dp</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:src">@mipmap/error_view</item>
+        <item name="RatioImageView_X">55</item>
+        <item name="RatioImageView_Y">38</item>
+    </style>
+    <!--任务宝箱任务-->
+    <style name="chest_center_ll">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="chest_center_line">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginRight">-10dp</item>
+        <item name="android:src">@drawable/selec_task_chest_line</item>
+    </style>
+    <style name="chest_center_img">
+        <item name="android:layout_width">18dp</item>
+        <item name="android:layout_height">18dp</item>
+        <item name="android:src">@drawable/selec_task_chest_img</item>
+    </style>
+    <style name="chest_top_fl">
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:clipChildren">false</item>
+        <item name="android:clipToPadding">false</item>
+    </style>
+    <style name="chest_top_anim_iv">
+        <item name="android:layout_width">68dp</item>
+        <item name="android:layout_height">68dp</item>
+        <item name="android:src">@mipmap/icon_light</item>
+        <item name="android:scaleType">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:visibility">invisible</item>
+    </style>
+    <style name="chest_top_iv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:scaleType">center</item>
+    </style>
+    <!--用户等级权限图标-->
+    <style name="level_tv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/gray_3</item>
+        <item name="android:textSize">@dimen/text_12_size</item>
+        <item name="android:drawablePadding">@dimen/space_small</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">@dimen/space_small</item>
+        <item name="android:layout_marginBottom">@dimen/space_small</item>
+    </style>
+
+</resources>

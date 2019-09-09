@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_dc"
+    >
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="23dp"
+        android:background="#33000000"/>
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/main_gray"
+        android:layout_marginTop="23dp">
+
+        <com.zhangku.qukandian.widght.ChaiBaoxiangLayout
+            android:id="@+id/chai_hongbao_widght"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentBottom="true"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:layout_below="@id/title_layout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <com.zhangku.qukandian.widght.MyTabLayout
+                android:id="@+id/fragment_information_tablayout"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:background="@color/main_gray2"
+                app:xTabDisplayNum="5"
+                app:xTabIndicatorColor="#FEC22E"
+                app:xTabIndicatorHeight="1.5dp"
+                app:xTabIndicatorWidth="30dp"
+                app:xTabSelectedTextColor="#333333"
+                app:xTabTextAppearance="@style/MyTabLayoutTextAppearanceInverse"
+                app:xTabTextColor="#666666"/>
+
+            <ImageView
+                android:id="@+id/fragment_information_edit"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:padding="12dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/information_edit_icon"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/information_framgent_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tab_layout"
+        android:layout_marginTop="0.5dp"
+        android:background="@color/white">
+
+        <com.zhangku.qukandian.widght.CustomViewPager
+            android:id="@+id/fragment_information_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/first_chai_remind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="70dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/ts1"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/close"/>
+    </LinearLayout>
+
+</RelativeLayout>

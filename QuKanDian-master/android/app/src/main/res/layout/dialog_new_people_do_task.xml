@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?><!--  
+    类名：   dialog_new_people_do_task.xml 
+    类名注释    新手领取阅读任务引导   -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/share_rect_corner_bgwhite"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:paddingTop="@dimen/space_big"
+    android:paddingBottom="@dimen/space_big"
+    android:paddingLeft="@dimen/space_small"
+    android:paddingRight="@dimen/space_small"
+    >
+    <TextView
+        android:id="@+id/taskGoReadTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="如何阅读咨询"
+        android:textColor="@color/gray_3"
+        android:textSize="@dimen/text_18_size"
+        />
+
+    <ImageView
+        android:id="@+id/taskGoReadIV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/new_people_task_guide_1"
+        android:layout_marginTop="@dimen/space_middle"
+        />
+
+    <TextView
+        android:id="@+id/taskGoReadTV"
+        android:layout_width="212dp"
+        android:layout_height="43dp"
+        android:background="@drawable/share_btn_bgred_radio"
+        android:text="去阅读"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_15_size"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/space_small"
+        />
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="19dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="5dp">
+
+        <EditText
+            android:id="@+id/activity_update_nickname_layout_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:hint="昵称的长度为2-20"
+            android:inputType="textCapCharacters"
+            android:textColor="@color/black_33"
+            android:textSize="@dimen/text_16_size"/>
+
+        <ImageView
+            android:id="@+id/activity_update_nickname_layout_clear"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:padding="8dp"
+            android:visibility="gone"
+            android:src="@mipmap/search_close_icon"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/login_edit_gray_bg_color"/>
+</LinearLayout>

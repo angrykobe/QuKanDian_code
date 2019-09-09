@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/item_message_view_skip"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:background="@color/grey_f9"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginRight="19dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/item_message_view_postion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="7dp"
+            android:src="@mipmap/icon_wd"
+            />
+
+        <TextView
+            android:id="@+id/item_message_view_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="汇率通知"
+            android:textColor="@color/gray_3"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:id="@+id/item_message_view_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2017"
+            android:textColor="@color/gray_9"
+            android:textSize="12dp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line"/>
+
+        <TextView
+            android:id="@+id/item_message_view_message1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="内容"
+            android:textColor="@color/gray_3"
+            android:paddingRight="19dp"
+            android:paddingLeft="19dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:textSize="15dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_f2"/>
+
+    <LinearLayout
+        android:id="@+id/item_message_view_message1_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:gravity="center_vertical"
+        android:paddingBottom="15dp"
+        android:paddingLeft="19dp"
+        android:paddingRight="19dp"
+        android:paddingTop="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="查看详情"
+            android:textColor="@color/gray_9"
+            android:textSize="15dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/arraw_right"/>
+    </LinearLayout>
+</LinearLayout>

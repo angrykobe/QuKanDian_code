@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="259dp"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/chai_hongbao_bg"
+    android:gravity="center_horizontal"
+    android:paddingBottom="48dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="好看好玩又能赚"
+        android:textColor="@color/red_f7b"
+        android:textSize="@dimen/information_title_size"/>
+
+    <TextView
+        android:id="@+id/dialog_show_gold_view_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="恭喜您获得"
+        android:textColor="@color/red_e1"
+        android:textSize="21dp"/>
+
+    <TextView
+        android:id="@+id/dialog_show_gold_view_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/black_1b"
+        android:textSize="36dp"/>
+
+    <TextView
+        android:id="@+id/dialog_show_gold_view_money_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="已存入您的零钱"
+        android:textColor="@color/black_33"
+        android:textSize="@dimen/text_13_size"/>
+    <TextView
+        android:id="@+id/dialog_show_gold_view_confirm"
+        android:layout_width="171dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/red_confirm_btn_solid_bg"
+        android:gravity="center"
+        android:text="确认"
+        android:textSize="@dimen/information_title_size"
+        android:textColor="@color/white"/>
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?><!--  
+    类名：   head_question_ac.xml 
+    类名注释       -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="18dp"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点击问题类型可快速查看对应的攻略哟~"
+        android:textSize="@dimen/text_15_size"
+        android:textColor="#BF904F"
+        android:paddingBottom="@dimen/space_small"
+        android:layout_marginRight="18dp"
+        android:layout_marginLeft="18dp"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/topRecyView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="18dp"
+        android:layout_marginLeft="18dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <View android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line"/>
+
+</LinearLayout>

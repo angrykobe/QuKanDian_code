@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="#bdbdbd" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/grey_f9"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/url_gray_actionbar_back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/selector_common_btn_bg"
+            android:padding="15dp"
+            android:src="@mipmap/dialog_wake_cancel" />
+
+        <TextView
+            android:id="@+id/url_gray_actionbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textColor="@color/title_color_new"
+            android:textSize="@dimen/information_title_size" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/webprogressBar"
+        style="@style/web_progressbar" />
+
+    <com.zhangku.qukandian.widght.X5WebView
+        android:id="@+id/url_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+        <!--上滑计费，用于新手提示-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/shanghua_jixu"
+            android:visibility="gone" />
+
+        <com.zhangku.qukandian.widght.ReadGoldView
+            android:id="@+id/ReadGoldView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="70dp"
+            android:layout_marginLeft="16dp" />
+    </com.zhangku.qukandian.widght.X5WebView>
+
+</LinearLayout>

@@ -1,0 +1,660 @@
+<?xml version="1.0" encoding="utf-8"?><!--  
+    类名：   ac_user_level.xml 
+    类名注释       -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_grey_f2"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_gravity="center"
+            android:background="@color/white">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:src="@mipmap/list_bj" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <include
+                    layout="@layout/view_user_photo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" />
+
+                <com.zhangku.qukandian.widght.UserLevelView
+                    android:id="@+id/mUserLevelView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/space_small" />
+
+                <LinearLayout
+                    android:layout_width="290dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/space_big"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/mLeftLevelTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_12_size" />
+
+                    <TextView
+                        android:id="@+id/mRightLevelTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_12_size" />
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/processBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="290dp"
+                    android:layout_height="5dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="6dp"
+                    android:max="5"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/process_level" />
+
+                <TextView
+                    android:id="@+id/mNeedExperienceTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="@dimen/space_middle"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_12_size" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/space_middle"
+            android:paddingTop="@dimen/space_small"
+            android:paddingRight="@dimen/space_middle">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="我的特权"
+                android:textColor="@color/gray_3"
+                android:textSize="@dimen/text_16_size" />
+
+            <TextView
+                android:id="@+id/moreTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="详细规则>"
+                android:textColor="@color/gray_9"
+                android:textSize="@dimen/text_13_size" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/mJurisdiction3"
+                style="@style/level_tv"
+                android:drawableTop="@mipmap/jurisdiction_1_no"
+                android:text="极速到账" />
+
+            <TextView
+                android:id="@+id/mJurisdiction5"
+                style="@style/level_tv"
+                android:drawableTop="@mipmap/jurisdiction_1_no"
+                android:text="内测资格" />
+
+            <TextView
+                android:id="@+id/mJurisdiction1"
+                style="@style/level_tv"
+                android:drawableTop="@mipmap/jurisdiction_1_no"
+                android:text="专属头饰" />
+
+            <TextView
+                android:id="@+id/mJurisdiction2"
+                style="@style/level_tv"
+                android:drawableTop="@mipmap/jurisdiction_1_no"
+                android:text="每日金币" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/mJurisdiction8"
+                style="@style/level_tv"
+                android:drawableTop="@mipmap/jurisdiction_1_no"
+                android:text="签到加成" />
+
+            <TextView
+                android:id="@+id/mJurisdiction9"
+                style="@style/level_tv"
+                android:drawableTop="@mipmap/jurisdiction_1_no"
+                android:text="宝箱加成" />
+
+            <TextView
+                android:id="@+id/mJurisdiction11"
+                style="@style/level_tv"
+                android:drawableTop="@mipmap/jurisdiction_11_no"
+                android:text="额外提现" />
+
+            <TextView
+                android:id="@+id/mJurisdiction7"
+                style="@style/level_tv"
+                android:drawableTop="@mipmap/jurisdiction_1_no"
+                android:text="任务加成" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mBottomIconView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/mJurisdiction10"
+                style="@style/level_tv"
+                android:drawableTop="@mipmap/jurisdiction_1_no"
+                android:text="热搜加成" />
+
+            <TextView
+                android:id="@+id/mJurisdiction6"
+                style="@style/level_tv"
+                android:drawableTop="@mipmap/jurisdiction_1_no"
+                android:text="红包加成" />
+
+            <TextView
+                android:id="@+id/mJurisdiction4"
+                style="@style/level_tv"
+                android:drawableTop="@mipmap/jurisdiction_1_no"
+                android:text="阅读加成" />
+
+            <TextView
+                style="@style/level_tv"
+                android:drawableTop="@mipmap/jurisdiction_1_no"
+                android:text="填充view"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+        <!--<FrameLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:paddingBottom="@dimen/space_small"-->
+        <!--android:paddingLeft="@dimen/space_middle"-->
+        <!--android:paddingRight="@dimen/space_middle"-->
+        <!--&gt;-->
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="30dp"-->
+        <!--android:layout_height="13dp"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:background="@drawable/share_rect_bottomradio_whitebg"-->
+        <!--&gt;-->
+
+
+        <!--</LinearLayout>-->
+        <!--</FrameLayout>-->
+
+        <ImageView
+            android:id="@+id/mShowMoreIconIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="@dimen/space_middle"
+            android:paddingRight="@dimen/space_middle"
+            android:paddingBottom="@dimen/space_small"
+            android:scaleType="fitStart"
+            android:src="@mipmap/show_list_down" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/main_grey_f2"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/space_middle"
+            android:paddingRight="@dimen/space_middle"
+            android:paddingBottom="@dimen/space_big">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="@color/line" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_small"
+                android:layout_marginRight="@dimen/space_small"
+                android:text="如何快速升级"
+                android:textColor="@color/gray_9"
+                android:textSize="@dimen/text_13_size" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="@color/line" />
+
+        </LinearLayout>
+        <!--start-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="@dimen/space_middle">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="每日签到"
+                    android:textColor="@color/gray_3"
+                    android:textSize="@dimen/text_15_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_small"
+                    android:text="每天进行签到"
+                    android:textColor="@color/gray_9"
+                    android:textSize="@dimen/text_12_size" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/signTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/selector_task_every_day"
+                android:ems="6"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="去签到"
+                android:textColor="@color/selector_red_gray"
+                android:textSize="@dimen/text_10_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="@dimen/space_middle">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="阅读红包文章/视频"
+                    android:textColor="@color/gray_3"
+                    android:textSize="@dimen/text_15_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_small"
+                    android:text="阅读带红包标识的文章/视频，日上限200"
+                    android:textColor="@color/gray_9"
+                    android:textSize="@dimen/text_12_size" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/watchTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/selector_task_every_day"
+                android:ems="6"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="去阅读"
+                android:textColor="@color/selector_red_gray"
+                android:textSize="@dimen/text_10_size" />
+        </LinearLayout>
+        <!--任务-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="@dimen/space_middle">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="完成任务"
+                    android:textColor="@color/gray_3"
+                    android:textSize="@dimen/text_15_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_small"
+                    android:text="在任务中心完成任务，日上限20"
+                    android:textColor="@color/gray_9"
+                    android:textSize="@dimen/text_12_size" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/doTaskTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/selector_task_every_day"
+                android:ems="6"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="去完成"
+                android:textColor="@color/selector_red_gray"
+                android:textSize="@dimen/text_10_size" />
+        </LinearLayout>
+        <!--热搜-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="@dimen/space_middle">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="热搜"
+                    android:textColor="@color/gray_3"
+                    android:textSize="@dimen/text_15_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_small"
+                    android:text="在热搜页面进行搜索并浏览，日上限60"
+                    android:textColor="@color/gray_9"
+                    android:textSize="@dimen/text_12_size" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/searchTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/selector_task_every_day"
+                android:ems="6"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="去搜索"
+                android:textColor="@color/selector_red_gray"
+                android:textSize="@dimen/text_10_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="@dimen/space_middle">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="有效邀请好友"
+                    android:textColor="@color/gray_3"
+                    android:textSize="@dimen/text_15_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_small"
+                    android:text="成功有效邀请好友"
+                    android:textColor="@color/gray_9"
+                    android:textSize="@dimen/text_12_size" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/shareTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/selector_task_every_day"
+                android:ems="6"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="去邀请"
+                android:textColor="@color/selector_red_gray"
+                android:textSize="@dimen/text_10_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="@dimen/space_middle">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="唤醒好友"
+                    android:textColor="@color/gray_3"
+                    android:textSize="@dimen/text_15_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_small"
+                    android:text="成功唤醒好友"
+                    android:textColor="@color/gray_9"
+                    android:textSize="@dimen/text_12_size" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/awakeTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/selector_task_every_day"
+                android:ems="6"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="去唤醒"
+                android:textColor="@color/selector_red_gray"
+                android:textSize="@dimen/text_10_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="@dimen/space_middle">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="有效阅读文章/视频"
+                    android:textColor="@color/gray_3"
+                    android:textSize="@dimen/text_15_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_small"
+                    android:text="阅读普通文章/视频，日上限50"
+                    android:textColor="@color/gray_9"
+                    android:textSize="@dimen/text_12_size" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/readTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/selector_task_every_day"
+                android:ems="6"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="去阅读"
+                android:textColor="@color/selector_red_gray"
+                android:textSize="@dimen/text_10_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="@dimen/space_middle"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="开启定时宝箱"
+                    android:textColor="@color/gray_3"
+                    android:textSize="@dimen/text_15_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_small"
+                    android:text="到首页左上角开启定时宝箱领取奖励，日上限6"
+                    android:textColor="@color/gray_9"
+                    android:textSize="@dimen/text_12_size" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/openTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/selector_task_every_day"
+                android:ems="6"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="去开启"
+                android:textColor="@color/selector_red_gray"
+                android:textSize="@dimen/text_10_size" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

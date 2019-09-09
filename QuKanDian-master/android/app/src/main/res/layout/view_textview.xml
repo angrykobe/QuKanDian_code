@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?><!--  
+    类名：   view_textview.xml 
+    类名注释       -->
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/contentTV"
+    android:layout_width="match_parent"
+    android:layout_height="31dp"
+    android:background="@drawable/share_recir_whitebg_grayframe"
+    android:gravity="center"
+    android:text="金币问题"
+    android:paddingLeft="@dimen/space_small"
+    android:paddingRight="@dimen/space_small"
+    android:textSize="@dimen/text_14_size"
+    android:layout_margin="@dimen/space_small"
+    android:layout_gravity="center"
+    android:textColor="@color/gray_9"
+    />

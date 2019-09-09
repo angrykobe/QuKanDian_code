@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <com.zhangku.qukandian.widght.datepicker.NumberPicker
+        android:id="@+id/year_picker"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="16dp"
+        app:startNumber="1949"
+        app:endNumber="2100"
+        app:currentNumber="1995"
+        app:flagText="年"
+        app:textSize="22dp"
+        app:verticalSpacing="25dp"
+        app:rowNumber="5" />
+
+    <com.zhangku.qukandian.widght.datepicker.NumberPicker
+        android:id="@+id/month_picker"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="16dp"
+        app:startNumber="1"
+        app:endNumber="12"
+        app:currentNumber="7"
+        app:flagText="月"
+        app:textSize="22dp"
+        app:verticalSpacing="25dp"
+        app:rowNumber="5" />
+
+    <com.zhangku.qukandian.widght.datepicker.NumberPicker
+        android:id="@+id/day_picker"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="16dp"
+        app:startNumber="1"
+        app:endNumber="31"
+        app:currentNumber="15"
+        app:flagText="日"
+        app:textSize="22dp"
+        app:verticalSpacing="25dp"
+        app:rowNumber="5" />
+
+</LinearLayout>

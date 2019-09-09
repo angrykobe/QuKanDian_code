@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/item_novice_read_prize_adapter_view_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:layout_centerInParent="true"
+        android:textColor="@drawable/novice_read_on_text_selected_bg"
+        android:textSize="18dp"/>
+
+    <ImageView
+        android:id="@+id/item_novice_read_prize_adapter_view_state"
+        android:layout_width="17dp"
+        android:layout_below="@id/item_novice_read_prize_adapter_view_text"
+        android:layout_height="17dp"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/novice_read_selected_bg"/>
+</RelativeLayout>

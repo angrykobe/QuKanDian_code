@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?><!--  
+    类名：   view_read_get_gold.xml 
+    类名注释  阅读回去金币  提示布局     -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:paddingRight="@dimen/space_small"
+    >
+
+    <com.zhangku.qukandian.widght.ReadGoldProcessView
+        android:id="@+id/readGoldProcessView"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/readRemindView"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:visibility="invisible"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/read_remind_left"
+            android:layout_gravity="center_vertical|right"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="80dp"
+            android:minWidth="100dp"
+            android:background="@drawable/share_read_remind_bg_gradient_radio"
+            android:gravity="center"
+            android:padding="@dimen/space_small"
+            android:orientation="vertical"
+            android:paddingLeft="26dp"
+            android:paddingTop="17dp"
+            android:paddingRight="26dp"
+            android:paddingBottom="17dp"
+            >
+
+
+            <TextView
+                android:id="@+id/readRemindTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/read_remindstr_for_login"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:lines="3"
+                android:maxLines="3"
+                android:minLines="3"
+                />
+
+            <TextView
+                android:id="@+id/readRemindBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+                android:background="@drawable/selector_read_remind_btn_radio"
+                android:text="@string/read_remindbtn_for_login"
+                android:textSize="14dp"
+                android:textColor="@color/fffb423c"
+                android:paddingLeft="21dp"
+                android:paddingRight="21dp"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</LinearLayout>

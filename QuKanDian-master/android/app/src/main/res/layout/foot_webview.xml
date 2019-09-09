@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?><!--  
+    类名：   foot_webview.xml 
+    类名注释       -->
+<com.tencent.smtt.sdk.WebView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/webview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingRight="@dimen/space_small"
+    android:paddingLeft="@dimen/space_small"
+    >
+
+</com.tencent.smtt.sdk.WebView>

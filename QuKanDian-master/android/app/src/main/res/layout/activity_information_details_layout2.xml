@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants"
+    android:keepScreenOn="true"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/StatusBar"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/white" />
+
+    <!--头部布局-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/activity_information_details_layout_back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/selector_common_btn_bg"
+            android:padding="15dp"
+            android:src="@mipmap/nav_back_green_icon" />
+
+        <TextView
+            android:id="@+id/activity_information_details_layout_goto_home"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/selector_common_btn_bg"
+            android:gravity="center"
+            android:text="关闭" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/changeWordsSizeTV"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:layout_marginRight="@dimen/space_big"
+            android:background="@drawable/share_recir_whitebg_grayframe"
+            android:ems="5"
+            android:gravity="center"
+            android:text="字体调节"
+            android:textSize="@dimen/text_11_size"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_details_gold"
+            android:layout_width="29dp"
+            android:layout_height="29dp"
+            android:layout_marginRight="@dimen/space_big"
+            android:background="@mipmap/icon_coin"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxEms="6"
+            android:maxLines="1"
+            android:text="0"
+            android:textColor="#734F12"
+            android:textSize="@dimen/text_10_size"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/grey_e5" />
+
+    <ProgressBar
+        android:id="@+id/webprogressBar"
+        style="@style/web_progressbar" />
+
+    <FrameLayout
+        android:id="@+id/loadingView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/loadingIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="center" />
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/activity_information_details_layout_loading_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <!--页面停留过久提示-->
+        <LinearLayout
+            android:id="@+id/readDetailTooLongView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#99000000"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:lineSpacingExtra="5dp"
+                android:paddingLeft="@dimen/space_small"
+                android:paddingTop="@dimen/space_small"
+                android:paddingBottom="@dimen/space_small"
+                android:text="您阅读这篇资讯很久了，阅读其他资讯可获得更多奖励!"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_15_size" />
+
+            <ImageView
+                android:id="@+id/readDetailTooLongClose"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:padding="@dimen/space_small"
+                android:src="@mipmap/channel_edit_cancel_icon" />
+
+        </LinearLayout>
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/SmartRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/RecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:scrollbars="none" />
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+        <com.zhangku.qukandian.widght.ReadGoldView
+            android:id="@+id/ReadGoldView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="70dp"></com.zhangku.qukandian.widght.ReadGoldView>
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line" />
+
+    <LinearLayout
+        android:id="@+id/bottomView"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="right|center_vertical"
+        android:orientation="horizontal">
+        <!--收藏-->
+        <ImageView
+            android:id="@+id/collectIV"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="13.5dp"
+            android:src="@drawable/collect_selected" />
+        <!--分享-->
+        <ImageView
+            android:id="@+id/shareIV"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/selector_common_btn_bg"
+            android:padding="13.5dp"
+            android:src="@mipmap/shared_cion" />
+        <!--更多-->
+        <ImageView
+            android:id="@+id/moreIV"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="13.5dp"
+            android:src="@mipmap/icon_more" />
+    </LinearLayout>
+</LinearLayout>

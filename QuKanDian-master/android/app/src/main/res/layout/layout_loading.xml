@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhangku.qukandian.widght.LoadingLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/loading_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/loading_layout_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/loading_layout_loading_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/loading_layout_nodata"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/loading_layout_nodata_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:drawableTop="@mipmap/empty_search"
+            android:gravity="center"
+            android:text="@string/load_nodata"
+            android:textColor="@color/common_textcolor"
+            android:textSize="15.0dp"/>
+
+        <LinearLayout
+            android:id="@+id/loading_layout_nodata_more"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/loading_layout_fail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/error_view"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="60dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="页面和程序员私奔了，点击屏幕重试"
+            android:layout_marginTop="-80dp"
+            android:textColor="@color/login_edit_gray_bg_color"
+            android:textSize="15dp"/>
+
+        <LinearLayout
+            android:id="@+id/loading_layout_fail_more"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/empty_collect"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/empty_collect"
+            android:layout_marginBottom="80dp"/>
+
+        <TextView
+            android:id="@+id/empty_collect_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-100dp"
+            android:text="主人，请去收藏您喜欢的文章或视频吧"
+            android:textColor="@color/login_edit_gray_bg_color"
+            android:textSize="15dp"/>
+        <TextView
+            android:id="@+id/empty_collect_goto_home"
+            android:layout_width="125dp"
+            android:layout_height="37dp"
+            android:text="去逛逛"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/share_recir_red"
+            android:gravity="center"
+            android:textColor="@color/black_33"
+            android:textSize="14dp"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/empty_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@mipmap/empty_search"
+            android:layout_marginBottom="80dp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/empty_search_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="啥也没找到，试试别的关键词吧"
+            android:layout_marginTop="-100dp"
+            android:textColor="@color/login_edit_gray_bg_color"
+            android:textSize="15dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/empty_message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/empty_message"
+            android:layout_marginBottom="80dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="您还没收到用户通知噢～"
+            android:layout_marginTop="-120dp"
+            android:textColor="@color/login_edit_gray_bg_color"
+            android:textSize="15dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/empty_netword"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/empty_netword"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="60dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="您的网络开小差了，点击屏幕重试"
+            android:layout_marginTop="-80dp"
+            android:textColor="@color/login_edit_gray_bg_color"
+            android:textSize="15dp"/>
+    </LinearLayout>
+
+</com.zhangku.qukandian.widght.LoadingLayout>

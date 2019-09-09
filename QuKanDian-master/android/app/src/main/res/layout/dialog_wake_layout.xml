@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="308dp"
+                android:layout_height="463dp"
+                android:background="@mipmap/dialog_wake_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="9dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/dialog_wake_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center_horizontal"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:textColor="#fdefb2"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/dialog_wake_title_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="25dp"/>
+
+        <EditText
+            android:id="@+id/dialog_wake_content"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_marginBottom="13dp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/gray_stroke_bg"
+            android:lineSpacingExtra="2dp"
+            android:paddingBottom="12dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="12dp"
+            android:textColor="@color/black_1b"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="以上为分享内容，可编辑"
+            android:textColor="@color/black_33"
+            android:textSize="14dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="21dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingTop="21dp">
+
+            <LinearLayout
+                android:id="@+id/dialog_wake_share_chat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/dialog_wake_chat_icon"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/dialog_wake_share_qq"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/dialog_wake_qq_icon"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/dialog_wake_share_sms"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/dialog_wake_sms_icon"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9dp"
+            android:layout_marginRight="9dp"
+            android:text="小贴士：唤醒任务已开启，3天内徒弟有效阅读数超过5篇，即刻奖励5000金币。"
+            android:textColor="#f23e11"
+            android:textSize="14dp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/dialog_wake_share_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:padding="7dp"
+        android:src="@mipmap/dialog_wake_cancel"/>
+</RelativeLayout>

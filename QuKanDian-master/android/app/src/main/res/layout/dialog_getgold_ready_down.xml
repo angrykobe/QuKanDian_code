@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?><!--  
+    类名：   dialog_getgold_ready_down.xml
+    类名注释       -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/share_rect_corner_bgwhite"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="30dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/appImg"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginRight="@dimen/space_small"
+            android:src="@mipmap/app_icon" />
+
+        <TextView
+            android:id="@+id/goldNumTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/appImg"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/appImg"
+            android:text="+100金币"
+            android:textColor="#FF7421"
+            android:textSize="@dimen/text_16_size" />
+
+        <TextView
+            android:id="@+id/appNameTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/appImg"
+            android:layout_marginBottom="6dp"
+            android:layout_toRightOf="@+id/appImg"
+            android:text="美图秀秀"
+            android:textColor="@color/gray_6"
+            android:textSize="@dimen/text_11_size" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="首次下载安装"
+        android:textColor="@color/gray_6"
+        android:textSize="@dimen/text_15_size"
+        android:layout_marginTop="25dp"
+        />
+    <TextView
+        android:id="@+id/timeShowTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/down_app_time_show"
+        android:textColor="@color/gray_6"
+        android:textSize="@dimen/text_13_size"
+        android:layout_marginTop="@dimen/space_middle"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="再次返回趣看视界，领取金币"
+        android:textColor="@color/gray_6"
+        android:textSize="@dimen/text_14_size"
+        android:layout_marginTop="@dimen/space_middle"
+        />
+    <TextView
+        android:id="@+id/playGameTV"
+        android:layout_width="212dp"
+        android:layout_height="43dp"
+        android:text="立即试玩"
+        android:textColor="@color/selector_white_red"
+        android:textSize="@dimen/text_14_size"
+        android:layout_marginTop="@dimen/space_middle"
+        android:gravity="center"
+        android:background="@drawable/shape_frame_red_radio"
+        />
+    <TextView
+        android:id="@+id/getTaskTV"
+        android:layout_width="212dp"
+        android:layout_height="43dp"
+        android:text="领取金币"
+        android:textColor="@color/selector_white_gray9"
+        android:textSize="@dimen/text_14_size"
+        android:layout_marginTop="@dimen/space_middle"
+        android:gravity="center"
+        android:background="@drawable/select_rect_red_gray_radio"
+        />
+
+
+
+</LinearLayout>

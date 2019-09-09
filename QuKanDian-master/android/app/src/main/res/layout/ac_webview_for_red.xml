@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ProgressBar
+        android:id="@+id/webprogressBar"
+        style="@style/web_progressbar" />
+
+    <com.zhangku.qukandian.widght.X5WebView
+        android:id="@+id/url_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+        <!--上滑计费，用于新手提示-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/shanghua_jixu"
+            android:visibility="gone" />
+
+        <com.zhangku.qukandian.widght.ReadGoldView
+            android:id="@+id/ReadGoldView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="70dp"
+            android:layout_marginLeft="16dp" />
+    </com.zhangku.qukandian.widght.X5WebView>
+
+</LinearLayout>

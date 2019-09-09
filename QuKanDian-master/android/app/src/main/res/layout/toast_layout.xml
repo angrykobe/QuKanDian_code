@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="144dp"
+    android:layout_height="125dp"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <ImageView
+        android:layout_width="144dp"
+        android:layout_height="125dp"
+        android:src="@mipmap/dialog_gold_bg"/>
+
+    <TextView
+        android:id="@+id/toast_gold"
+        android:layout_width="144dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:text="+13"
+        android:textColor="#f58c02"
+        android:gravity="center_horizontal"
+        android:textSize="18dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/toast_remind"
+        android:layout_width="144dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="85dp"
+        android:text="运势测算大师（带来好运）"
+        android:gravity="center_horizontal"
+        android:textColor="#fff421"
+        android:textStyle="bold"/>
+</RelativeLayout>

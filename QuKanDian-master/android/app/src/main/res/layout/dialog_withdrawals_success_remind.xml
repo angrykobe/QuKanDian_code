@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginBottom="40dp"
+    android:background="@drawable/share_rect_corner_bgwhite"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="@dimen/space_big"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="恭喜你即将有笔收入进账，记住以下秘诀，赚钱更轻松！ "
+        android:textColor="@color/gray_3"
+        android:textSize="@dimen/text_17_size" />
+
+    <TextView
+        android:id="@+id/contentTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_middle"
+        android:text="多看文章多热搜，多做任务多邀请"
+        android:textColor="#FF5150"
+        android:textSize="@dimen/text_17_size" />
+
+    <TextView
+        android:id="@+id/knowTV"
+        android:layout_width="212dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="@dimen/space_big"
+        android:background="@drawable/share_rect_corners_red_1"
+        android:gravity="center"
+        android:text="知道了"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_16_size" />
+</LinearLayout>

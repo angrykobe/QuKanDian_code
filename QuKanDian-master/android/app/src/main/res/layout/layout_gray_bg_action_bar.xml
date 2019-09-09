@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhangku.qukandian.widght.GrayBgActionBar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gray_actionbar_layout"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:background="@color/grey_f2"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true">
+
+    <View
+        android:id="@+id/temp_palceholder"
+        android:layout_width="match_parent"
+        android:layout_height="23dp"
+        android:background="#bdbdbd"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/temp_palceholder">
+
+        <ImageView
+            android:id="@+id/gray_actionbar_back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/selector_common_btn_bg"
+            android:padding="15dp"
+            android:src="@mipmap/nav_back_green_icon"/>
+
+        <TextView
+            android:id="@+id/gray_actionbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/title_color_new"
+            android:textSize="@dimen/information_title_size"/>
+
+        <TextView
+            android:id="@+id/gray_actionbar_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/black_33"
+            android:textSize="13dp"
+            android:visibility="gone"/>
+    </RelativeLayout>
+</com.zhangku.qukandian.widght.GrayBgActionBar>

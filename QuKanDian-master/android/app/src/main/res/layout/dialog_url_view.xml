@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/login_edit_gray_bg_color"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dialog_url_view_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="刷新"
+        android:textColor="@color/black_33"
+        android:textSize="16dp"/>
+
+    <TextView
+        android:id="@+id/dialog_url_view_copy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="复制链接"
+        android:textColor="@color/black_33"
+        android:textSize="16dp"/>
+
+    <TextView
+        android:id="@+id/dialog_url_view_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="取消"
+        android:textColor="@color/black_33"
+        android:textSize="16dp"/>
+</LinearLayout>

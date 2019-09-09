@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhangku.qukandian.widght.UpdateView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="90dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="正在下载更新，请耐心等待"
+        android:textColor="@color/black_33"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="26dp"
+        android:orientation="vertical">
+
+        <com.daimajia.numberprogressbar.NumberProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            app:progress_reached_bar_height="8dp"
+            app:progress_reached_color="@color/main_yellow"
+            app:progress_text_color="@color/main_yellow"
+            app:progress_text_size="12sp"
+            app:progress_unreached_bar_height="8dp"
+            app:progress_unreached_color="#E0DFE2" />
+
+
+        <TextView
+            android:id="@+id/progressBar_text"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</com.zhangku.qukandian.widght.UpdateView>

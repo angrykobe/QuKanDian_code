@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?><!--  
+    类名：   head_task_fragment.xml 
+    类名注释       -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.zhangku.qukandian.widght.TextSwitcherView
+        android:id="@+id/task_activity_marquee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@color/FFF6E5"
+        android:paddingLeft="@dimen/space_big"
+        android:paddingTop="3dp"
+        android:paddingRight="@dimen/space_big"
+        android:paddingBottom="3dp" />
+
+    <com.zhangku.qukandian.widght.DaySignView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp" />
+
+
+    <ImageView
+        android:id="@+id/new_task_shoutu"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/main_grey_f2"
+        android:scaleType="center"
+        android:src="@mipmap/img_task_banner"
+        android:visibility="gone" />
+
+    <com.zhangku.qukandian.widght.TaskChestView
+        android:id="@+id/TaskChestView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/space_big"
+        android:paddingRight="@dimen/space_big"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/grey_f2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="@dimen/text_10_size"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:text="@string/task_tip"
+            android:textColor="@color/title_color_new"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textColor="@color/tab_select_new"
+            android:textSize="19sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/task_tip2"
+            android:textColor="@color/title_color_new"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/headRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center_vertical"
+        android:background="@color/white">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/grey_f2" />
+    <!--&lt;!&ndash;新手福利视图，金币满一元提现，且没有提现记录显示该视图&ndash;&gt;-->
+    <!--<LinearLayout-->
+    <!--android:id="@+id/newPeopleGoldView"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:paddingLeft="@dimen/space_big"-->
+    <!--android:paddingTop="@dimen/space_middle"-->
+    <!--android:paddingRight="@dimen/space_big"-->
+    <!--android:paddingBottom="@dimen/space_middle"-->
+    <!--android:background="@color/ffffeeec"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:visibility="gone"-->
+    <!--&gt;-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/newPeopleGoldTV"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:textSize="@dimen/text_16_size"-->
+    <!--android:textColor="@color/main_red"-->
+    <!--android:text="@string/new_people_get_gold"-->
+    <!--android:layout_weight="1"-->
+    <!--android:layout_marginRight="@dimen/space_middle"-->
+    <!--android:lineSpacingExtra="5dp"-->
+    <!--/>-->
+    <!--<TextView-->
+    <!--android:id="@+id/newPeopleGoldBtn"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:background="@drawable/selector_sign_radio"-->
+    <!--android:gravity="center"-->
+    <!--android:text="立即领取"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:ems="6"-->
+    <!--android:paddingBottom="@dimen/space_small"-->
+    <!--android:paddingTop="@dimen/space_small"-->
+    <!--android:textSize="@dimen/text_13_size"-->
+    <!--/>-->
+    <!--</LinearLayout>-->
+</LinearLayout>

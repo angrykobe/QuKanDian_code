@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="55dp">
+
+        <FrameLayout
+            android:id="@+id/contentPanel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.zhangku.qukandian.widght.SmartView
+            android:id="@+id/mSmartView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="42dp"
+            android:gravity="center_horizontal" />
+    </FrameLayout>
+    <!--底部按钮-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/share_main_bottom"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:clipChildren="false"
+        android:clipToPadding="false">
+
+        <!--首页-->
+        <LinearLayout
+            android:id="@+id/mBottomHomeView"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/mBottomHomeIV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:background="@drawable/home_tab_icon_selected" />
+
+            <TextView
+                android:id="@+id/mBottomHomeTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="首页"
+                android:textColor="@drawable/home_tab_textcolor_selector"
+                android:textSize="10dp" />
+        </LinearLayout>
+        <!--视频-->
+        <LinearLayout
+            android:id="@+id/mBottomVideoView"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/activity_main_tab_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableTop="@drawable/video_tab_icon_selected"
+                android:drawablePadding="3dp"
+                android:gravity="center"
+                android:text="视频"
+                android:textColor="@drawable/home_tab_textcolor_selector"
+                android:textSize="10dp" />
+        </LinearLayout>
+        <!--中间广告-->
+        <!--<LinearLayout-->
+        <!--android:id="@+id/mBottomActView"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="80dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:gravity="center"-->
+        <!--android:orientation="vertical"-->
+        <!--android:paddingBottom="5dp"-->
+        <!--android:visibility="gone">-->
+
+        <ImageView
+            android:id="@+id/mBottomActIV"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:paddingBottom="5dp"
+            android:scaleType="fitCenter" />
+
+        <!--</LinearLayout>-->
+        <!--任务-->
+        <LinearLayout
+            android:id="@+id/mBottomTaskView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|bottom"
+            android:orientation="vertical"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            >
+
+            <TextView
+                android:id="@+id/mBottomTaskSpotView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/icon_newpeople_task_top"
+                android:text="可领取"
+                android:gravity="center"
+                android:textSize="@dimen/text_11_size"
+                android:textColor="#1a1a1a"
+                android:paddingBottom="5dp"
+                />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:drawableTop="@drawable/shoutu_tab_icon_selected"
+                    android:drawablePadding="3dp"
+                    android:gravity="center"
+                    android:text="任务"
+                    android:textColor="@drawable/home_tab_textcolor_selector"
+                    android:textSize="10dp" />
+            </RelativeLayout>
+        </LinearLayout>
+        <!--我的-->
+        <RelativeLayout
+            android:id="@+id/mBottomMeView"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:padding="5dp"
+            >
+
+            <TextView
+                android:id="@+id/textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableTop="@drawable/me_tab_icon_selected"
+                android:drawablePadding="3dp"
+                android:gravity="center"
+                android:text="我的"
+                android:textColor="@drawable/home_tab_textcolor_selector"
+                android:textSize="10dp" />
+
+            <ImageView
+                android:id="@+id/mBottomMeSpotView"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignTop="@+id/textview"
+                android:layout_alignRight="@+id/textview"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="1dp"
+                android:src="@mipmap/position_red"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

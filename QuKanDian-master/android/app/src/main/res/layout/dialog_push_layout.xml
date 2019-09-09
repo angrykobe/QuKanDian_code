@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="288dp"
+                android:layout_height="223dp"
+                android:background="@mipmap/today_news_bg"
+                android:orientation="vertical">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="95dp"/>
+    <TextView
+        android:id="@+id/dlialog_push_titile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:ellipsize="end"
+        android:lines="2"
+        android:paddingLeft="19dp"
+        android:paddingRight="19dp"
+        android:textColor="#2b2b2b"
+        android:textSize="19dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center_vertical"
+        android:layout_gravity="bottom"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:id="@+id/dlialog_push_ignore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/today_news_cancel_bg"
+            android:gravity="center"
+            android:text="忽略"
+            android:textColor="@color/black_1b"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/dlialog_push_to_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@mipmap/today_news_confirm_bg"
+            android:gravity="center"
+            android:text="查看详情"
+            android:textSize="20dp"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+</LinearLayout>

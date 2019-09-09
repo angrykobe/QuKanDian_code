@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/base_refresh_loading_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/base_refhresh_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include
+            android:id="@+id/item_information_header"
+            layout="@layout/item_read_record_view"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.zhangku.qukandian.widght.SuperSwipeRefreshLayout
+                android:id="@+id/base_swip_refresh_layout"
+                android:focusableInTouchMode="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/base_refresh_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:focusableInTouchMode="true"
+                    android:paddingRight="9dp"
+                    android:paddingLeft="9dp"/>
+            </com.zhangku.qukandian.widght.SuperSwipeRefreshLayout>
+
+            <include layout="@layout/dialog_load_remind_view"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+    类名：   view_sign_day.xml
+    类名注释    每日连续签到底部天数   -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rl_top"
+            android:layout_width="33dp"
+            android:layout_height="38dp"
+            android:background="@drawable/shape_btn_sign_gary">
+
+            <TextView
+                android:id="@+id/textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_centerHorizontal="true"
+                android:text="100"
+                android:textColor="#333333"
+                android:textSize="@dimen/text_10_size" />
+
+            <ImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textview"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:background="@mipmap/icon_coin_sign" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tv_sign_days"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_top"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="1天"
+            android:textColor="@color/login_edit_gray_bg_color"
+            android:textSize="@dimen/text_10_size" />
+    </RelativeLayout>
+
+</RelativeLayout>

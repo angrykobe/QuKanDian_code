@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_details_adapter_view_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="15dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="15dp">
+
+    <RelativeLayout
+        android:id="@+id/item_details_adapter_view_img_layout"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content">
+
+        <com.zhangku.qukandian.widght.RatioImageView
+            android:id="@+id/item_details_adapter_view_img"
+            android:layout_width="110dp"
+            android:layout_height="76dp"
+            android:scaleType="centerCrop"
+            app:RatioImageView_X="55"
+            app:RatioImageView_Y="38"/>
+
+        <ImageView
+            android:id="@+id/item_details_adapter_view_play_icon"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/video_icon"/>
+
+        <TextView
+            android:id="@+id/item_details_adapter_view_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/oval_black_transparent_bg"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="8dp"/>
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/item_details_adapter_view_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="17dp"
+        android:layout_toRightOf="@id/item_details_adapter_view_img_layout"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:textColor="@color/black_33"
+        android:textSize="@dimen/information_title_size"/>
+</RelativeLayout>

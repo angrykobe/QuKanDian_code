@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhangku.qukandian.widght.LayoutRankHeader
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.zhangku.qukandian.widght.RatioImageView
+            app:RatioImageView_X="750"
+            app:RatioImageView_Y="366"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/incom_rank_top_bg"/>
+
+        <ImageView
+            android:id="@+id/frament_week_rank_layout_userheader"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="11dp"
+            android:layout_marginLeft="19dp"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:id="@+id/frament_week_rank_layout_all_income_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/frament_week_rank_layout_userheader"
+            android:layout_toRightOf="@id/frament_week_rank_layout_userheader"
+            android:text="我的总收入"
+            android:textColor="@color/black_1b"
+            android:textSize="@dimen/text_14_size"/>
+
+        <TextView
+            android:id="@+id/frament_week_rank_layout_all_income"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/frament_week_rank_layout_all_income_title"
+            android:layout_below="@id/frament_week_rank_layout_all_income_title"
+            android:layout_marginTop="8dp"
+            android:text="32.00元"
+            android:gravity="center"
+            android:textColor="#9e3b02"
+            android:textSize="@dimen/text_17_size"/>
+
+        <TextView
+            android:id="@+id/frament_week_rank_layout_my_rank_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/frament_week_rank_layout_userheader"
+            android:layout_marginRight="78dp"
+            android:text="我的排名"
+            android:textColor="@color/black_1b"
+            android:textSize="@dimen/text_14_size"/>
+
+        <TextView
+            android:id="@+id/frament_week_rank_layout_my_rank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/frament_week_rank_layout_my_rank_title"
+            android:layout_below="@id/frament_week_rank_layout_all_income_title"
+            android:layout_marginTop="8dp"
+            android:drawableLeft="@mipmap/rank_prize_icon"
+            android:drawablePadding="2dp"
+            android:gravity="center"
+            android:text="1000+"
+            android:textColor="#9e3b02"
+            android:textSize="@dimen/text_17_size"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="43dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:background="#F7F4E4"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="排名"
+                android:textColor="@color/black_33"
+                android:textSize="@dimen/text_14_size"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="用户"
+                android:textColor="@color/black_33"
+                android:textSize="@dimen/text_14_size"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="徒弟数"
+                android:textColor="@color/black_33"
+                android:textSize="@dimen/text_14_size"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="总收入(元)"
+                android:textColor="@color/black_33"
+                android:textSize="@dimen/text_14_size"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="#eeebda"/>
+    </RelativeLayout>
+</com.zhangku.qukandian.widght.LayoutRankHeader>

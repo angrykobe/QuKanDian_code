@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?><!--  
+    类名：   selector_gray_red.xml 
+    类名注释       -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="#F43D19" android:state_selected="true"/>
+    <item android:color="@color/black_66" />
+</selector>

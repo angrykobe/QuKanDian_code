@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+    类名：   .xmlxml
+    类名注释    每日签到按钮背景   -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <item
+        android:bottom="1.5dp"
+        android:left="1.5dp"
+        android:right="1.5dp"
+        android:top="1.5dp">
+        <shape
+            android:shape="rectangle"
+            android:useLevel="true">
+            <size android:height="10dp"/>
+            <corners android:radius="30dp" />
+            <solid android:color="@color/white" />
+            <!-- 径向渐变angle无效 -->
+        </shape>
+    </item>
+    <item>
+        <shape
+            android:shape="rectangle"
+            android:useLevel="true">
+            <size android:height="10dp"/>
+            <corners android:radius="30dp" />
+            <!-- 径向渐变angle无效 -->
+            <gradient
+                android:angle="0"
+                android:centerX="0.5"
+                android:centerY="0.5"
+                android:endColor="#77ffffff"
+                android:gradientRadius="1dp"
+                android:startColor="#ffffffff"
+                android:type="radial" />
+        </shape>
+    </item>
+</layer-list>

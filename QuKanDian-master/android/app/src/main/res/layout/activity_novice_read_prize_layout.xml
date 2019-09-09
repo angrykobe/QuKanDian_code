@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/grey_f2">
+
+        <ImageView
+            android:id="@+id/activity_task_layout_back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/selector_common_btn_bg"
+            android:padding="15dp"
+            android:src="@mipmap/nav_back_green_icon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="新手阅读奖励"
+            android:textColor="@color/title_color_new"
+            android:textSize="@dimen/information_title_size"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="77.5dp"
+            android:background="#fd8026">
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/activity_novice_read_prize_layout_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/text_19_size"
+            android:layout_marginRight="@dimen/text_19_size"
+            android:layout_marginTop="70dp"
+            android:background="@mipmap/novice_read_body_bg"
+            android:paddingTop="22dp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="@dimen/text_19_size"
+            android:layout_marginRight="@dimen/text_19_size"
+            android:layout_marginTop="20dp"
+            android:background="@mipmap/novice_read_header_bg"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="39dp"
+            android:drawableLeft="@mipmap/novice_read_title_icon"
+            android:drawablePadding="5dp"
+            android:text="任务记录"
+            android:textColor="@color/grey_f2"
+            android:textSize="20dp"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/activity_novice_read_prize_layout_to_read_btn"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginRight="34dp"
+        android:layout_marginTop="28.5dp"
+        android:background="@mipmap/login_register_bg_icon"
+        android:gravity="center"
+        android:text="去阅读赚金币"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="19dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginTop="28dp"
+        android:text="友情提示：累计阅读天数达到1-21天，且阅读内容超过5篇，可获得相应的阅读奖励"
+        android:textColor="@color/black_33"
+        android:textSize="@dimen/text_15_size"/>
+</LinearLayout>

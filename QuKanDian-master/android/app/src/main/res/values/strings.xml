@@ -1,0 +1,98 @@
+<resources>
+    <string name="app_name">趣看视界</string>
+    <string name="user_protocol">\"趣看视界用户协议\"</string>
+    <string name="text_loading">正在加载中,请稍候&#8230;</string>
+
+    <string name="load_nodata">无数据</string>
+    <string name="save">保存</string>
+    <string name="edit">编辑</string>
+    <string name="cancel">取消</string>
+    <string name="withdraw_record">提现记录</string>
+    <string name="list_foot_loading_text">正在加载中,请稍候&#8230;</string>
+    <string name="howto"><u>如何计算</u></string>
+    <string name="ad_activity_name">闲玩</string>
+    <!--我要提现用户协议h5  作废-->
+    <string name="withdrawals_html">http://qukandian.com/tixianshuoming/index.html</string>
+
+    <string name="sougou_fragment_html">http://qukandian.com/ads/sogouWord/index.html?bao=</string>
+    <!--<string name="sougou_fragment_html_for_test">sougouWord/index.html?bao=</string>-->
+    <string name="sougou_fragment_html_for_test">resou293/index.html?bao=</string>
+    <!--赚赏金-->
+    <string name="new_me_fragment_game_test">http://qukandian.com/test/H5Active/index.html?userid=</string>
+    <string name="new_me_fragment_game">http://qukandian.com/H5active/index.html?userid=</string>
+    <!--兑换商城-->
+    <string name="mall_url_activity_url">http://qukandian.com/H5Shop/index.html?userid=</string>
+    <string name="mall_url_activity_url_test">http://qukandian.com/test/h5shop/index.html?userid=</string>
+    <!--用户协议？？-->
+    <string name="register_activity_url">http://s.api.qukandian.com/web/%E7%94%A8%E6%88%B7%E5%8D%8F%E8%AE%AE.html</string>
+    <string name="ad_downing_text">正在下载请耐心等待~</string>
+    <string name="dislike_setting">已减少此内容推荐</string>
+
+    <string name="sign_for_every">已连续签到 &lt;font color=\'#FB2A2A\'&gt;%1$d&lt;/font&gt; 天</string>
+    <string name="detail_read">点击按钮&lt;font color=\'#feeb1b\'&gt;点击阅读全文&lt;/font&gt;，更容易获得金币哦</string>
+    <string name="read_remindbtn_for_login">马上登录赚金币</string>
+    <string name="read_remindstr_for_login">登录即可获得阅读金币奖励</string>
+
+    <string name="read_remindstr_continue_read">诶呀，本文的阅读奖励被趣友领完了，去继续阅读其他文章赚金币吧</string>
+    <string name="read_remindstr_had_got">该文章的奖励今天已领取过了哦~</string>
+    <string name="read_remindstr_get_tomorrow">今日阅读奖励已领完，明天再来领吧</string>
+    <string name="read_remindstr_stay_too_long">您阅读这篇资讯很久了，阅读其他资讯可获得更多奖励哦</string>
+    <string name="read_remindbtn_no_show">不再提示</string>
+    <string name="read_remindbtn_continue_read">继续阅读</string>
+    <string name="read_profit_goto_detail">查看钱包</string>
+    <string name="read_profit_today_income">今日阅读收益：</string>
+    <string name="read_profit_goto_login_btn">点击登录开始赚钱</string>
+    <string name="read_profit_goto_login_str">登录后即可拥有阅读收益，快点登录吧~</string>
+    <string name="read_profit_infor_4">金币提现可点击“我的-我要提现”，进入提现页提现到微信账号</string>
+    <string name="read_profit_infor_3">每收一个徒弟，徒弟阅读收益时，你可以获得双倍奖励</string>
+    <string name="read_profit_infor_2">认真观看视频，既有机会获得金币奖励</string>
+    <string name="read_profit_infor_1">认真阅读资讯，既有机会获得金币奖励</string>
+
+    <string name="read_profit_no_profit">今天还没有阅读收益哦，快去阅读赚钱吧~</string>
+    <string name="new_people_get_gold">恭喜您，已成功赚到%1$s元了，快去提现到微信吧</string>
+    <string name="go_to_task_str">您的金币余额不足，去做任务赚更多金币吧</string>
+    <string name="checking_for_money">提现审核中</string>
+    <string name="goto_task_btn">继续赚金币</string>
+    <string name="checking_for_money_three_day">审核通过后3个工作日内微信到账</string>
+    <string name="goto_login_for_red_str">阅读红包需要登录后才可以领取哦</string>
+    <string name="goto_login_for_red_btn">立即登录领取</string>
+    <string name="new_people_done_task">%1$s金币</string>
+    <string name="know">知道了</string>
+
+    <string name="permissions_request">没有请求权限此应用程序可能无法正常工作。是否打开应用程序设置以修改应用程序权限？</string>
+    <string name="permissions_request_phone">没有手机请求权限此应用程序可能无法正常工作。是否打开应用程序设置以修改应用程序权限？</string>
+    <string name="done_new_people_task">恭喜您，所有新手任务都已完成了。</string>
+
+    <string name="get_gold_for_down_app_time">还需试玩%1$s</string>
+    <string name="wifi_video_str">播放本视频将消耗%1$s流量</string>
+    <string name="down_app_time_show">返回趣看视界，点击立即试玩%1$d分钟</string>
+    <!--任务模块-->
+    <string name="task_chest_title">完成&lt;font color=\'#F54D38\'&gt;指定任务&lt;/font&gt;可打开对应宝箱（每日0点重置）</string>
+    <string name="task_chest_doing">&lt;font color=\'#FB413C\' &gt;&lt;u&gt;进行中&lt;/u&gt;&lt;/font&gt;</string>
+    <string name="task_chest_open">已开启</string>
+    <string name="task_chest_no_open">未开启</string>
+    <string name="task_chest_can_open">可开启</string>
+
+    <string name="task_chest_dialog_process">%1$s&lt;font color=\'#FB413C\' &gt;(%2$d/%3$d)&lt;/font&gt;</string><!--例如：完成（1/3）-->
+    <string name="withdrawals_foot">提现条件：&lt;font color=\'#F67E1D\' &gt;%1$s&lt;/font&gt;</string>
+    <string name="my_qq">2780261750</string>
+    <string name="need_up_ext">还差%1$s经验值升级</string>
+    <string name="newpeople_get_title">很遗憾您只击败了&lt;font color=\'#f48213\'&gt;1.4%&lt;/font&gt;的用户，获得</string>
+    <string name="user_num">恭喜成为趣看视界第&lt;font color=\'#f48213\'&gt;%1$s&lt;/font&gt;位用户</string>
+    <string name="withdrawals_infor">提现条件：&lt;font color=\'#F67E1D\'&gt;%1$s&lt;/font&gt;</string>
+    <string name="level_gold">当前金币：&lt;font color=\'#FADA4E\'&gt;%1$s&lt;/font&gt;</string>
+    <string name="dialog_level">%1$s&lt;font color=\'#FB413C\' &gt;　%2$d/%3$d&lt;/font&gt;</string><!---->
+
+
+    <string name="login_check_box">已阅读并同意本平台</string>
+    <string name="login_protocol">「隐私政策」</string>
+    <string name="withdrawals_welfare">更多福利</string>
+    <string name="task_tip">轻松日赚</string>
+    <string name="task_tip2">元</string>
+    <string name="task_chest_tip">完成下方任务可领取</string>
+    <string name="task_chest_tip2">宝箱奖励：200金币</string>
+
+    <string name="new_people_task_tip">hi，为了让您快速掌握赚钱技巧，小趣特地为您准备了新手专属任务，只需1分钟，即可轻松上手</string>
+
+
+</resources>

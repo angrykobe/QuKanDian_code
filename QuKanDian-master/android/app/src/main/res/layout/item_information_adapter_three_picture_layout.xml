@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhangku.qukandian.widght.ItemInformationAdapterThreePictureLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_information_adapter_three_pic_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/item_information_adapter_three_pic_placeholder"
+            android:layout_width="33dp"
+            android:layout_height="match_parent"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/item_information_adapter_three_pic_placeholder"
+            android:orientation="vertical"
+            android:paddingBottom="12dp"
+            android:paddingTop="12dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp">
+
+            <TextView
+                android:id="@+id/item_information_adapter_three_pic_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@color/black_1b"
+                android:textSize="@dimen/text_18_size"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <com.zhangku.qukandian.widght.RatioImageView
+                    android:id="@+id/item_information_adapter_three_pic_imgs1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    app:RatioImageView_X="55"
+                    app:RatioImageView_Y="38"/>
+
+                <com.zhangku.qukandian.widght.RatioImageView
+                    android:id="@+id/item_information_adapter_three_pic_imgs2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    app:RatioImageView_X="55"
+                    app:RatioImageView_Y="38"/>
+
+                <com.zhangku.qukandian.widght.RatioImageView
+                    android:id="@+id/item_information_adapter_three_pic_imgs3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    app:RatioImageView_X="55"
+                    app:RatioImageView_Y="38"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+                <TextView
+                    android:id="@+id/item_information_adapter_one_pic_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="3dp"
+                    android:background="@mipmap/xsgj"
+                    android:visibility="gone"
+                    />
+
+                <TextView
+                    android:id="@+id/item_information_adapter_three_pic_top"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="3dp"
+                    android:background="@drawable/top_background"
+                    android:text="置顶"
+                    android:textColor="@color/red_500"
+                    android:layout_toRightOf="@id/item_information_adapter_one_pic_price"
+                    android:textSize="8dp"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/item_information_adapter_three_pic_author"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="3"
+                    android:textColor="@color/black_a9"
+                    android:text="作者"
+                    android:textSize="@dimen/information_infor_size"/>
+
+                <TextView
+                    android:id="@+id/item_information_adapter_three_pic_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="19dp"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:text="阅读数"
+                    android:textColor="@color/black_a9"
+                    android:textSize="@dimen/information_infor_size"/>
+
+                <TextView
+                    android:id="@+id/item_information_adapter_three_pic_share_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="16dp"
+                    android:drawableLeft="@mipmap/home_share_icon"
+                    android:drawablePadding="2dp"
+                    android:text="20金币"
+                    android:textColor="@color/black_a9"
+                    android:textSize="@dimen/information_infor_size"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/item_information_adapter_three_pic_releas_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="19dp"
+                    android:textColor="@color/black_a9"
+                    android:textSize="@dimen/information_infor_size"/>
+
+
+                <ImageView
+                    android:id="@+id/item_information_adapter_one_pic_filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/filter_close"
+                    android:padding="10dp"
+                    />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/item_information_adapter_three_pic_select"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/item_information_adapter_three_pic_select_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/collect_select_bg"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/item_read_record_view"/>
+
+</com.zhangku.qukandian.widght.ItemInformationAdapterThreePictureLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?><!--  
+    类名：   dialog_change_word_size.xml 
+    类名注释       -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="109dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/space_big"
+        android:paddingRight="@dimen/space_big"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="文章字体大小"
+            android:textSize="@dimen/text_16_size"
+            android:textColor="@color/gray_3"
+            android:layout_weight="1"
+            />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="170dp"
+            android:layout_height="35dp"
+            android:orientation="horizontal"
+            >
+
+            <RadioButton
+                android:id="@+id/small"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/selec_change_word_size_left"
+                android:text="小"
+                android:textSize="@dimen/text_14_size"
+                android:button="@null"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#FFB647"
+                />
+            <RadioButton
+                android:id="@+id/middle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/selec_change_word_size_middle"
+                android:text="中"
+                android:textSize="@dimen/text_14_size"
+                android:button="@null"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#FFB647"
+                android:checked="true"
+                />
+            <RadioButton
+                android:id="@+id/big"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/selec_change_word_size_right"
+                android:text="大"
+                android:textSize="@dimen/text_14_size"
+                android:button="@null"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#FFB647"
+                />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line"
+        />
+
+    <TextView
+        android:id="@+id/dismiss"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:text="保存设置"
+        android:textSize="@dimen/text_16_size"
+        android:textColor="@color/gray_3"
+        android:gravity="center"
+        />
+
+
+</LinearLayout>

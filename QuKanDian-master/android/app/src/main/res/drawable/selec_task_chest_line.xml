@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?><!--  
+    类名：   selec_task_chest_line.xml 
+    类名注释   任务宝箱的线    -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:drawable="@drawable/share_line_ora"/>
+    <item android:state_selected="false" android:drawable="@drawable/share_line_gray"/>
+    <item android:drawable="@drawable/share_line_gray"/>
+</selector>

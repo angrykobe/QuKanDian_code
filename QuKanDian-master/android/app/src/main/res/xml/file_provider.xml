@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <external-path
+        name="51xianwan"
+        path="51xianwan" />
+    <files-path
+        name="downloads"
+        path="downloads" />
+    <!--升级-->
+    <!--<external-cache-path-->
+    <!--name="mn_update_external_cache"-->
+    <!--path=""/>-->
+
+    <!--<cache-path-->
+    <!--name="mn_update_cache"-->
+    <!--path=""/>-->
+    <root-path
+        name="files_root"
+        path="." />
+    <root-path
+        name="external_storage_root"
+        path="." />
+
+    <!--<external-path-->
+    <!--name="my_images"-->
+    <!--path="Android/data/com/zhangku/qukandian1/files/header/"-->
+    <!--/>-->
+    <external-files-path
+        name="Download"
+        path="Download/" />
+    <!--物理路径相当于Context.getExternalFilesDir(String) + /Download/ -->
+
+    <external-path
+        name="hm_download_path"
+        path="Download" />
+    <!--<files-path name="name" path="path" /> 物理路径相当于Context.getFilesDir() + /path/-->
+    <!--<cache-path name="name" path="path" /> 物理路径相当于Context.getCacheDir() + /path/-->
+    <!--<external-path name="name" path="path" /> 物理路径相当于Environment.getExternalStorageDirectory() + /path/-->
+    <!--<external-files-path name="name" path="path" /> 物理路径相当于Context.getExternalFilesDir(String) + /path/-->
+    <!--<external-cache-path name="name" path="path" /> 物理路径相当于Context.getExternalCacheDir() + /path/-->
+
+    <!--adHub-->
+    <external-path
+        name="gdt_sdk_download_path"
+        path="GDTDOWNLOAD" />
+
+    <external-path
+        name="files_root"
+        path="mimoDownload" />
+    <external-path
+        name="external_storage_root"
+        path="." />
+    <!--极光广告-->
+    <external-path
+        name="jssp_sdk_download_path"
+        path="Jpush" />
+    <!--<external-path name="external_files" path="."/>-->
+    <external-files-path
+        name="external_files_path"
+        path="Download" />
+    <!--风灵-->
+    <files-path
+        name="file"
+        path="felink/download"/>
+    <!--广点通 这个下载路径不可以修改，必须是 GDTDOWNLOAD -->
+    <external-path name="gdt_sdk_download_path" path="GDTDOWNLOAD" />
+</paths>

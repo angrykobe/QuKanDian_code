@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?><!--  
+    类名：   share_rect_bottomradio_whitebg.xml 
+    类名注释       -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+
+    <corners
+        android:bottomLeftRadius="5dp"
+        android:bottomRightRadius="5dp"
+        />
+    <solid android:color="@color/white" />
+</shape>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhangku.qukandian.widght.ItemInformationAdapterOnePictureLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_information_adapter_one_pic_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/item_information_adapter_one_pic_layout_placeholder"
+            android:layout_width="33dp"
+            android:layout_height="match_parent"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/item_information_adapter_one_pic_layout_placeholder"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="12dp"
+            android:paddingTop="12dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/item_information_adapter_one_pic_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:ellipsize="end"
+                    android:gravity="left"
+                    android:maxLines="3"
+                    android:textColor="@color/black_1b"
+                    android:textSize="@dimen/text_18_size"
+                    android:text="标题"
+                    />
+
+                <RelativeLayout
+                    android:id="@+id/text_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/item_information_adapter_one_pic_title"
+                    android:layout_gravity="bottom"
+                    android:layout_marginTop="4dp">
+                    <!--高价文标识-->
+                    <TextView
+                        android:id="@+id/item_information_adapter_one_pic_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="3dp"
+                        android:background="@mipmap/xsgj"
+                        android:visibility="gone"
+                        />
+
+                    <TextView
+                        android:id="@+id/item_information_adapter_one_pic_top"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="3dp"
+                        android:background="@drawable/top_background"
+                        android:text="置顶"
+                        android:textColor="@color/red_500"
+                        android:textSize="8dp"
+                        android:layout_toRightOf="@id/item_information_adapter_one_pic_price"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/item_information_adapter_one_pic_author"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/item_information_adapter_one_pic_top"
+                        android:ellipsize="end"
+                        android:maxLength="6"
+                        android:maxLines="1"
+                        android:textColor="@color/black_a9"
+                        android:layout_centerVertical="true"
+                        android:text="作者"
+                        android:textSize="@dimen/information_infor_size"/>
+
+                    <TextView
+                        android:id="@+id/item_information_adapter_one_pic_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_toRightOf="@id/item_information_adapter_one_pic_author"
+                        android:layout_weight="1"
+                        android:maxLines="1"
+                        android:textColor="@color/black_a9"
+                        android:layout_centerVertical="true"
+                        android:text="阅读数"
+                        android:textSize="@dimen/information_infor_size"/>
+
+                    <ImageView
+                        android:id="@+id/item_information_adapter_one_pic_filter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/filter_close"
+                        android:padding="10dp"
+                        android:layout_centerVertical="true"
+                        />
+
+                    <TextView
+                        android:id="@+id/item_information_adapter_one_pic_release_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="16dp"
+                        android:textColor="@color/black_a9"
+                        android:textSize="@dimen/information_infor_size"
+                        android:layout_centerVertical="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="110dp"
+                android:layout_height="76dp"
+                android:layout_alignParentRight="true">
+
+                <ImageView
+                    android:id="@+id/item_information_adapter_one_pic_imageview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"/>
+
+                <ImageView
+                    android:id="@+id/item_information_adapter_one_pic_play_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/video_icon"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/item_information_adapter_one_pic_layout_select"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/item_information_adapter_one_pic_layout_select_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/collect_select_bg"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/item_read_record_view"/>
+
+</com.zhangku.qukandian.widght.ItemInformationAdapterOnePictureLayout>

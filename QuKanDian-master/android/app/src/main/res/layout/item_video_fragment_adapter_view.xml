@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_video_fragment_adapter_view_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include layout="@layout/item_read_record_view"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <ImageView
+            android:id="@+id/item_video_fragment_adapter_view_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/item_video_fragment_adapter_view_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/video_title_bg_icon"
+            android:paddingBottom="14dp"
+            android:paddingLeft="19dp"
+            android:paddingRight="19dp"
+            android:paddingTop="10dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/information_title_size"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/video_icon"/>
+
+        <TextView
+            android:id="@+id/item_video_fragment_adapter_view_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/oval_black_transparent_bg"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="10dp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="19dp"
+        android:paddingTop="5dp">
+
+        <include layout="@layout/lable_layout"/>
+
+        <TextView
+            android:id="@+id/item_video_fragment_adapter_view_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="16dp"
+            android:drawableLeft="@mipmap/video_icon_new"
+            android:drawablePadding="2dp"
+            android:textColor="@color/black_33"
+            android:textSize="14dp"/>
+
+        <TextView
+            android:id="@+id/item_video_share_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:drawableLeft="@mipmap/video_sharec_icon_new"
+            android:drawablePadding="2dp"
+            android:text="20金币"
+            android:textColor="@color/black_33"
+            android:textSize="14dp"/>
+
+        <ImageView
+            android:id="@+id/item_video_fragment_adapter_view_more"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingRight="15dp"
+            android:paddingTop="5dp"
+            android:src="@mipmap/three_pisition_icon"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/item_video_fragment_adapter_view_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/filter_close"
+            android:padding="10dp"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/grey_f2"/>
+
+    <LinearLayout
+        android:id="@+id/item_video_read_record_view_item"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/grey_f2"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="刚刚看到这里 点击刷新"
+            android:textColor="@color/main_red"
+            android:textSize="14dp"/>
+    </LinearLayout>
+</LinearLayout>

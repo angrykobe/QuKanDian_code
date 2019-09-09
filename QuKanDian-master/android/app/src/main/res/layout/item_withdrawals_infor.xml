@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/mWithdrawalsInforTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FEF6F3"
+        android:paddingLeft="@dimen/space_big"
+        android:paddingTop="@dimen/space_middle"
+        android:paddingRight="@dimen/space_big"
+        android:paddingBottom="@dimen/space_middle"
+        android:text="@string/withdrawals_infor"
+        android:textColor="@color/gray_3"
+        android:textSize="@dimen/text_13_size"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/mWithdrawalsInforLlNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_small"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/space_big"
+            android:paddingTop="22dp"
+            android:text="无门槛提现"
+            android:textColor="@color/gray_3"
+            android:textSize="@dimen/text_15_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_small"
+            android:gravity="center_vertical"
+            android:paddingTop="22dp"
+            android:text="（金币足够即可提现）"
+            android:textColor="@color/gray_9"
+            android:textSize="@dimen/text_12_size" />
+    </LinearLayout>
+
+</LinearLayout>

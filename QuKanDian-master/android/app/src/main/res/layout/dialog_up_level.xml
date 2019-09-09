@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?><!--  
+    类名：   dialog_up_level.xml 
+    类名注释       -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:layout_gravity="center_horizontal"
+    android:id="@+id/rootView"
+    >
+
+    <FrameLayout
+        android:layout_width="250dp"
+        android:layout_height="200dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/light"
+            android:layout_gravity="center"
+            />
+        <ImageView
+            android:id="@+id/mLevelImg"
+            android:layout_width="187dp"
+            android:layout_height="161dp"
+            android:src="@mipmap/pop_1"
+            android:layout_gravity="center"
+            />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/getGoldTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="升级奖励：5000金币"
+        android:textColor="#FFF412"
+        android:textSize="@dimen/text_19_size"
+        android:layout_marginTop="5dp"
+        />
+    <TextView
+        android:id="@+id/subtitleTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="解锁权限："
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_15_size"
+        android:layout_marginTop="17dp"
+        android:layout_below="@+id/getGoldTV"
+        android:layout_centerHorizontal="true"
+        android:gravity="right"
+        />
+</LinearLayout>

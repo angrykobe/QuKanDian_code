@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants"
+    android:keepScreenOn="true"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="#bdbdbd" />
+
+    <LinearLayout
+        android:id="@+id/video_details_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/grey_f2">
+
+        <ImageView
+            android:id="@+id/activity_information_details_layout_back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/selector_common_btn_bg"
+            android:padding="15dp"
+            android:src="@mipmap/nav_back_green_icon" />
+
+        <TextView
+            android:id="@+id/activity_video_details_layout_goto_home"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/selector_common_btn_bg"
+            android:gravity="center"
+            android:text="关闭" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/activity_information_details_layout_collect"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="13.5dp"
+            android:src="@drawable/collect_selected" />
+
+        <RelativeLayout
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="4dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/activity_information_details_layout_shared"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/selector_common_btn_bg"
+                android:padding="13.5dp"
+                android:src="@mipmap/shared_cion" />
+
+            <ImageView
+                android:id="@+id/details_share_btn_new"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/selector_common_btn_bg"
+                android:padding="13.5dp"
+                android:src="@mipmap/share_new_icon"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/video_player_layout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <com.android.tedcoder.wkvideoplayer.view.SuperVideoPlayer
+            android:id="@+id/video_player"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/wifiRemindView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/black"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="当前不在WiFi环境"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14_size" />
+
+                <TextView
+                    android:id="@+id/wifiRemindTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center|bottom"
+                    android:text="@string/wifi_video_str"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14_size" />
+
+                <LinearLayout
+                    android:id="@+id/wifiNotRemindView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/space_small"
+                    android:layout_marginTop="3dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/wifiNotRemindCB"
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:background="@drawable/sel_check_wifi"
+                        android:button="@null" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="1.5dip"
+                        android:text="  不再提醒"
+                        android:textColor="@color/white"
+                        android:textSize="14dp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/contineWatchTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/share_recir_tranbg_whiteframe"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="@dimen/space_small"
+                    android:paddingRight="@dimen/space_small"
+                    android:paddingTop="3dp"
+                    android:text="继续观看"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_14_size"
+                    android:layout_marginTop="13dp" />
+
+            </LinearLayout>
+        </com.android.tedcoder.wkvideoplayer.view.SuperVideoPlayer>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/activity_information_details_layout_loading_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/grey_e5" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/activity_information_details_layout_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:scrollbars="none"
+                />
+
+            <RelativeLayout
+                android:id="@+id/activity_information_details_layout_empty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/empty_search" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <com.zhangku.qukandian.widght.ReadGoldView
+            android:id="@+id/ReadGoldView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="70dp"
+    android:layout_marginLeft="16dp"></com.zhangku.qukandian.widght.ReadGoldView>
+    </FrameLayout>
+</LinearLayout>

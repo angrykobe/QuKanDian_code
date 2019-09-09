@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?><!--  
+    类名：   share_new_me_bg.xml 
+    类名注释   我的背景图    -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item >
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#FFCE00"
+                android:endColor="#FFBE00"
+                android:angle="0"
+                />
+        </shape>
+    </item>
+    <item android:top="132dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/grey_f2"/>
+        </shape>
+    </item>
+</layer-list>

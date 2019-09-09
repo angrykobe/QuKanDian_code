@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhangku.qukandian.widght.NewMeJinbiLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white_fillet_bg"
+    android:paddingTop="27dp"
+    android:paddingBottom="15dp">
+
+    <LinearLayout
+        android:id="@+id/new_me_coin_layout"
+        android:layout_width="0dp"
+        android:layout_height="61dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="我的金币"
+            android:textColor="@color/login_edit_gray_bg_color"
+            android:textSize="13dp"/>
+
+        <TextView
+            android:id="@+id/new_me_coin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal|bottom"
+            android:textColor="@color/black_1b"
+            android:textSize="17dp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_marginTop="7dp"
+        android:src="@mipmap/new_me_fengexian"/>
+
+    <LinearLayout
+        android:id="@+id/new_me_mytudi_layout"
+        android:layout_width="0dp"
+        android:layout_height="61dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="我的徒弟"
+            android:textColor="@color/login_edit_gray_bg_color"
+            android:textSize="13dp"/>
+
+        <TextView
+            android:id="@+id/new_me_mytudi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="0"
+            android:gravity="center_horizontal|bottom"
+            android:textColor="@color/black_1b"
+            android:textSize="17dp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_marginTop="7dp"
+        android:src="@mipmap/new_me_fengexian"/>
+
+    <LinearLayout
+        android:id="@+id/new_me_collect_layout"
+        android:layout_width="0dp"
+        android:layout_height="61dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="我的收藏"
+            android:textColor="@color/login_edit_gray_bg_color"
+            android:textSize="13dp"/>
+
+        <TextView
+            android:id="@+id/new_me_collect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="0"
+            android:gravity="center_horizontal|bottom"
+            android:textColor="@color/black_1b"
+            android:textSize="17dp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_marginTop="7dp"
+        android:src="@mipmap/new_me_fengexian"/>
+
+    <LinearLayout
+        android:id="@+id/new_me_browhistory_layout"
+        android:layout_width="0dp"
+        android:layout_height="61dp"
+        android:gravity="center_horizontal"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="浏览历史"
+            android:textColor="@color/login_edit_gray_bg_color"
+            android:textSize="13dp"/>
+
+        <TextView
+            android:id="@+id/new_me_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal|bottom"
+            android:textColor="@color/black_1b"
+            android:textSize="17dp"/>
+    </LinearLayout>
+
+</com.zhangku.qukandian.widght.NewMeJinbiLayout>

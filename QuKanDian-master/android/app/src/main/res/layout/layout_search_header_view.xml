@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhangku.qukandian.widght.SearchHeaderView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:paddingTop="20dp"
+    android:background="@color/main_yellow"
+    android:gravity="center_vertical"
+    android:paddingLeft="19dp"
+    android:paddingRight="14dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:background="@mipmap/search_edit_bg"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:padding="6dp"
+            android:src="@mipmap/search_black_icon"/>
+
+        <EditText
+            android:id="@+id/activity_search_layout_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:lines="1"
+            android:paddingLeft="9dp"
+            android:paddingRight="9dp"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:textColor="@color/black_33"
+            android:textSize="15dp"/>
+
+        <ImageView
+            android:id="@+id/activity_search_layout_clear"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:padding="6dp"
+            android:src="@mipmap/search_close_icon"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/activity_search_layout_finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:padding="5dp"
+        android:background="@drawable/selector_common_btn_bg"
+        android:text="取消"
+        android:textColor="@color/white"
+        android:textSize="17dp"/>
+</com.zhangku.qukandian.widght.SearchHeaderView>

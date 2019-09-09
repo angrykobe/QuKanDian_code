@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/withdrawals_fail"
+        android:layout_marginTop="@dimen/space_middle"
+        />
+
+
+    <TextView
+        android:id="@+id/failTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_17_size"
+        android:text="还需要连续登陆1天还需要连续登陆1天还需要连续登陆1天还需要连续登陆1天"
+        android:gravity="center"
+        android:textColor="@color/gray_3"
+        android:layout_marginTop="@dimen/space_middle"
+        android:layout_marginBottom="@dimen/space_middle"
+        android:layout_marginLeft="@dimen/space_middle"
+        android:layout_marginRight="@dimen/space_middle"
+        android:lineSpacingExtra="3dp"
+        />
+
+    <View
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:background="@color/line" />
+
+    <TextView
+        android:id="@+id/submitTV"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:textSize="@dimen/text_17_size"
+        android:text="知道啦"
+        android:gravity="center"
+        android:textColor="@color/gray_6"
+        />
+
+</LinearLayout>
